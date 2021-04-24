@@ -1,14 +1,19 @@
 import React from 'react'
 import Home from './screens/Home'
-import './App.css'
-
+import { GlobalStyle } from './styles/GlobalStyles'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Nav from './components/Nav'
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <Home />
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <Router>
+        <Nav />
+        <Route path='/'>
+          <Home />
+        </Route>
+      </Router>
+    </>
   )
 }
 
