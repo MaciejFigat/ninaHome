@@ -1,0 +1,21 @@
+.container {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15ch, 1fr));
+    grid-gap: 1.5rem;
+}
+
+.wrapper {
+  color: rosybrown;
+  background-color: seagreen;
+  border-radius: 5px;
+  min-width: fit-content;
+    /* max-width: 300px; */
+    /* max-height: 200px; */
+  }
+
+.img {
+    object-fit: cover;
+    max-height: 200px;
+    border-radius: 5px;
+}
