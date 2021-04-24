@@ -23,7 +23,7 @@ export const ListItem = styled.li`
   /* font-family: 'Roboto Slab', serif; */
   font-weight: 700;
   @media (max-width: 740px) {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-right: 0.5rem;
   }
 `
