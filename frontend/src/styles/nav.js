@@ -22,6 +22,13 @@ export const ListItem = styled.li`
   font-size: 1.5rem;
   /* font-family: 'Roboto Slab', serif; */
   font-weight: 700;
+
+  &:hover {
+    color: red;
+  }
+  &:active {
+    color: purple;
+  }
   @media (max-width: 740px) {
     font-size: 1rem;
     margin-right: 0.5rem;

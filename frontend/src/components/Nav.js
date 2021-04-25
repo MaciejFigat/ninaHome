@@ -1,40 +1,66 @@
 import React from 'react'
-import { HashLink } from 'react-router-hash-link'
-// import '../styles/nav.scss'
+import { NavHashLink } from 'react-router-hash-link'
 import { NavContainer, NavList, ListItem } from '../styles/nav'
+// import { useLocation } from 'react-router-dom'
 const Nav = () => {
+  // const location = useLocation()
   return (
     <NavContainer>
       <NavList>
         <ListItem>
           {' '}
-          <HashLink smooth to='/#home'>
+          <NavHashLink
+            smooth
+            to='/#home'
+            activeClassName='selected'
+            activeStyle={{ fontWeight: '700', color: 'white' }}
+          >
             Home
-          </HashLink>
+          </NavHashLink>
         </ListItem>
         <ListItem>
           {' '}
-          <HashLink smooth to='/#fitness'>
+          <NavHashLink
+            smooth
+            to='/#fitness'
+            activeClassName='selected'
+            activeStyle={{ fontWeight: 'bold', color: 'white' }}
+          >
             Fitness
-          </HashLink>
+          </NavHashLink>
         </ListItem>
         <ListItem>
           {' '}
-          <HashLink smooth to='/#plans'>
+          <NavHashLink
+            smooth
+            to='/#plans'
+            activeClassName='selected'
+            activeStyle={{ fontWeight: 'bold', color: 'white' }}
+          >
             Plany
-          </HashLink>
+          </NavHashLink>
         </ListItem>
         <ListItem>
           {' '}
-          <HashLink smooth to='/#training'>
+          <NavHashLink
+            smooth
+            to='/#training'
+            activeClassName='selected'
+            activeStyle={{ fontWeight: 'bold', color: 'white' }}
+          >
             Treningi
-          </HashLink>
+          </NavHashLink>
         </ListItem>
         <ListItem>
           {' '}
-          <HashLink smooth to='/#ending'>
+          <NavHashLink
+            smooth
+            to='/#ending'
+            activeClassName='selected'
+            activeStyle={{ fontWeight: 'bold', color: 'white' }}
+          >
             Ćwiczenia
-          </HashLink>
+          </NavHashLink>
         </ListItem>
       </NavList>
     </NavContainer>

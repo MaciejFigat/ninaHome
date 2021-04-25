@@ -4,19 +4,16 @@ export const StyledImage = styled.img`
   width: ${(props) => (props.width ? props.width : '80%')};
   height: ${(props) => (props.height ? props.height : '80%')};
   object-fit: cover;
+  padding-bottom: 1rem;
   /* object-position: 0px 5%; */
   border-radius: 5px;
-  position: relative;
-  top: -5px;
-  left: 0px;
-  /* max-height: 300px; */
 `
 
 export const CoverImage = styled.img`
   width: ${(props) => (props.width ? props.width : '50%')};
   height: ${(props) => (props.height ? props.height : '50%')};
   object-fit: cover;
-  object-position: 0px 0%;
+  object-position: 0px 5%;
   border-radius: 5px;
   @media (max-width: 740px) {
     width: 100%;
@@ -27,11 +24,9 @@ export const WrapperCentringDiv = styled.div`
   place-items: center;
   background-color: var(--background1-main);
   min-height: 100vh;
-  /* font-size: calc(10px + 2vmin);  */
   color: var(--text-main);
 `
 export const CardWrapper = styled.ul`
-  /* overflow: hidden;   */
   list-style: none;
   padding: 0;
   margin: 1.5rem 1.5rem 0rem 1.5rem;
@@ -59,12 +54,15 @@ export const CardProper = styled.li`
   background: var(--background2-main);
   border-radius: 5px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  /* font-family: 'Roboto Slab', serif; */
   border: solid 1px var(--border-main);
   transition: all 0.3s ease-in-out;
-  /* min-height: 100%; */
+  overflow: hidden;
   min-height: fit-content;
   margin-bottom: 1rem;
+  @media (max-width: 770px) {
+    /* min-height: 100%; */
+    /* overflow: visible; */
+  }
 
   &:hover {
     @media (min-width: 740px) {
@@ -75,6 +73,7 @@ export const CardProper = styled.li`
 export const CardH3 = styled.h3`
   margin: 1rem 1rem 1rem 2rem;
   font-size: 1.55rem;
+
   @media (max-width: 770px) {
     font-size: 1.25rem;
   }

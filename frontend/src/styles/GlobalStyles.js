@@ -32,6 +32,15 @@ body {
     a, a:link, a:visited{
       text-decoration: none;
       color: #06acf1;
+      transition: 0.3s;
+    }
+    a:hover  {
+      color:red;
+      transition: 0.3s;
+    }
+    a:active  {
+      color:yellow;
+      transition: 0.3s;
     }
 }
 ::-webkit-scrollbar {
