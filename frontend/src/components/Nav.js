@@ -13,7 +13,7 @@ const Nav = () => {
             smooth
             to='/#home'
             activeClassName='selected'
-            activeStyle={{ fontWeight: '700', color: 'white' }}
+            activeStyle={{ fontWeight: '700', color: 'lightcoral' }}
           >
             Home
           </NavHashLink>
@@ -24,7 +24,7 @@ const Nav = () => {
             smooth
             to='/#fitness'
             activeClassName='selected'
-            activeStyle={{ fontWeight: 'bold', color: 'white' }}
+            activeStyle={{ fontWeight: 'bold', color: 'lightcoral' }}
           >
             Fitness
           </NavHashLink>
@@ -35,7 +35,7 @@ const Nav = () => {
             smooth
             to='/#plans'
             activeClassName='selected'
-            activeStyle={{ fontWeight: 'bold', color: 'white' }}
+            activeStyle={{ fontWeight: 'bold', color: 'lightcoral' }}
           >
             Plany
           </NavHashLink>
@@ -46,7 +46,7 @@ const Nav = () => {
             smooth
             to='/#training'
             activeClassName='selected'
-            activeStyle={{ fontWeight: 'bold', color: 'white' }}
+            activeStyle={{ fontWeight: 'bold', color: 'lightcoral' }}
           >
             Treningi
           </NavHashLink>
@@ -57,7 +57,7 @@ const Nav = () => {
             smooth
             to='/#ending'
             activeClassName='selected'
-            activeStyle={{ fontWeight: 'bold', color: 'white' }}
+            activeStyle={{ fontWeight: 'bold', color: 'lightcoral' }}
           >
             Ćwiczenia
           </NavHashLink>

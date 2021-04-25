@@ -35,13 +35,10 @@ body {
       transition: 0.3s;
     }
     a:hover  {
-      color:red;
-      transition: 0.3s;
+      color: pink;
+      transition: 0.3s; 
     }
-    a:active  {
-      color:yellow;
-      transition: 0.3s;
-    }
+    
 }
 ::-webkit-scrollbar {
   width: 0.75em;
