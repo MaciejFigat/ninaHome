@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
+import smoothScrollPolyfill from 'smoothscroll-polyfill'
 import reportWebVitals from './reportWebVitals'
+
+smoothScrollPolyfill.polyfill()
 
 ReactDOM.render(
   <React.StrictMode>
