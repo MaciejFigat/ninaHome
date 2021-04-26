@@ -19,6 +19,17 @@ export const CoverImage = styled.img`
     width: 100%;
   }
 `
+
+export const LogoImage = styled.img`
+  width: ${(props) => (props.width ? props.width : '50%')};
+  height: ${(props) => (props.height ? props.height : '50%')};
+  object-fit: cover;
+  fill: var(--text-main) !important;
+  margin-right: 1rem;
+  @media (max-width: 740px) {
+    margin-right: 0.5rem;
+  }
+`
 export const WrapperCentringDiv = styled.div`
   display: grid;
   place-items: center;
@@ -79,7 +90,7 @@ export const CardH3 = styled.h3`
   }
 `
 export const CardH2 = styled.h3`
-  margin: 1rem 1rem 1rem 2rem;
+  margin: 4rem 1rem 1rem 2rem;
   font-size: 2.25rem;
   @media (max-width: 770px) {
     font-size: 2rem;

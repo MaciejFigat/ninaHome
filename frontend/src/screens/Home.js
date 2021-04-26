@@ -1,5 +1,6 @@
 import React from 'react'
 import nina1 from '../assets/nina1.jpg'
+
 import { WrapperCentringDiv, CoverImage } from '../styles/styled'
 import { fitnessData } from '../data/fitness'
 import { plansData } from '../data/plans'

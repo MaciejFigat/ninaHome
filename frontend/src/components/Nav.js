@@ -1,12 +1,14 @@
 import React from 'react'
 import { NavHashLink } from 'react-router-hash-link'
 import { NavContainer, NavList, ListItem } from '../styles/nav'
-// import { useLocation } from 'react-router-dom'
+import { LogoImage } from '../styles/styled'
+import parrots from '../assets/parrots.svg'
 const Nav = () => {
-  // const location = useLocation()
   return (
     <NavContainer>
       <NavList>
+        <LogoImage src={parrots} width='8%' height='3%' />
+
         <ListItem>
           {' '}
           <NavHashLink
