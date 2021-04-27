@@ -9,7 +9,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-   
+    background-color: var(--background1-main);  
+    font-family: 'Quicksand', sans-serif; 
 }
 
 :root {
@@ -18,6 +19,8 @@ body {
     --color2-main: #393232;
     --color3-main: #151515;
     --text-main: lightcoral;
+    --text2-main: #d996a8;
+    --text3-main: #d4b8c0;
     --border-main: pink;
 
     --color1-secondary: #236677;
@@ -28,11 +31,14 @@ body {
    
     --background1-main: #282c34;
     --background2-main: #18191c;
-  
-    a, a:link, a:visited{
+
+    
+
+    a, a:link, a:visited {
       text-decoration: none;
       color: #06acf1;
       transition: 0.3s;
+      
     }
     a:hover  {
       color: pink;

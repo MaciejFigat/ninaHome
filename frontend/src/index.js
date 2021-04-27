@@ -5,13 +5,14 @@ import App from './App'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import smoothScrollPolyfill from 'smoothscroll-polyfill'
 import reportWebVitals from './reportWebVitals'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 smoothScrollPolyfill.polyfill()
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Router>
     <App />
-  </React.StrictMode>,
+  </Router>,
   document.getElementById('root')
 )
 
