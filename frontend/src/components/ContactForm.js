@@ -82,7 +82,7 @@ const ContactForm = () => {
         <ContactFormContainer>
           <Loader
             type='ThreeDots'
-            color='var(--color2-secondary)'
+            color='var(--text-main)'
             height={20}
             width={60}
             visible={spinnerVisible}

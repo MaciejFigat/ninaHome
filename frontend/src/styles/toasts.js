@@ -29,13 +29,9 @@ export const ToastPrimary = styled.div`
   ${(props) =>
     props.toastVersion === 'success' &&
     `
-      background-color: rgb(57, 214, 84);
+      background-color: var(--text-main);
     `}
-${(props) =>
-    props.toastVersion === 'saved' &&
-    `
-      background-color: rgb(42, 115, 211);
-    `}
+
 ${(props) =>
     props.toastVersion === 'failure' &&
     `
