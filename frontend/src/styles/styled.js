@@ -5,6 +5,8 @@ export const StyledImage = styled.img`
   height: ${(props) => (props.height ? props.height : '80%')};
   object-fit: cover;
   padding-bottom: 1rem;
+  /* margin-bottom: 3rem; */
+  /* overflow: hidden; */
   /* object-position: 0px 5%; */
   border-radius: 5px;
 `
@@ -69,6 +71,7 @@ export const CardProper = styled.li`
   transition: all 0.3s ease-in-out;
   overflow: hidden;
   min-height: fit-content;
+
   margin-bottom: 1rem;
   @media (max-width: 770px) {
     /* min-height: 100%; */
@@ -84,13 +87,13 @@ export const CardProper = styled.li`
 export const CardH3 = styled.h3`
   margin: 1rem 1rem 1rem 2rem;
   font-size: 1.55rem;
-
+  min-height: fit-content;
   @media (max-width: 770px) {
     font-size: 1.25rem;
   }
 `
-export const CardH2 = styled.h3`
-  margin: 4rem 1rem 1rem 2rem;
+export const CardH2 = styled.h2`
+  margin: 2rem 1rem 1rem 2rem;
   font-size: 2.25rem;
   @media (max-width: 770px) {
     font-size: 2rem;
@@ -105,6 +108,7 @@ export const CardP = styled.p`
   margin-left: 3rem;
   margin-right: 1rem;
   min-width: fit-content;
+  font-weight: 500;
   border-bottom: solid 1.5px var(--color2-main);
   @media (max-width: 770px) {
     margin-left: 0.5rem;

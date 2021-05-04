@@ -1,11 +1,12 @@
 import mirror from '../assets/mirror.jpg'
 
-const plansData = [
+const offerData = [
   {
     id: 1,
     picture: mirror,
     title: 'Template title 1',
-    description: 'Template desc 1',
+    description:
+      'Moim celem jest odpowiednia ocena możliwości klienta i przyspieszenie progresu w wybranej dziedzinie ruchu.',
   },
   {
     id: 2,
@@ -21,4 +22,4 @@ const plansData = [
   },
 ]
 
-export { plansData }
+export { offerData }

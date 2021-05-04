@@ -19,7 +19,7 @@ const Panel = ({ id, data, title, subtitle }) => {
           <CardProper key={example.id}>
             <StyledImage
               width='100%'
-              height='80%'
+              height='60%'
               src={example.picture}
               alt='yoga girl'
             />

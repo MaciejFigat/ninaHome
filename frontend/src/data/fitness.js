@@ -6,20 +6,23 @@ const fitnessData = [
   {
     id: 1,
     picture: nina1,
-    title: 'Na kolana',
-    description: 'Co zrobisz za ciastko z kremem?',
+    title: 'Trening funkcjonalny',
+    description:
+      'Moje podejście do klienta charakteryzuje indywidualizm i odpowiednie dostosowywanie bodźców treningowych.',
   },
   {
     id: 2,
     picture: nina2,
-    title: 'Całe życie na kolanach',
-    description: 'Pełzam wciąż',
+    title: 'Różnorodne płaszczyzny',
+    description:
+      'Szczególną uwagę zwracam na wzmacnianie ciała w różnych płaszczyznach tak by nie przeciążać wciąż tych samych struktur.',
   },
   {
     id: 3,
     picture: mirror,
-    title: 'Odpoczynek',
-    description: 'Moje odbicie jest super',
+    title: 'Rozpoznanie przeszkód',
+    description:
+      'Staram się eliminować szkodliwe wzorce ruchowe, oraz eliminować słabe ogniwa układ ruchu.',
   },
 ]
 

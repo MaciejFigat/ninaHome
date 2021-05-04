@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavHashLink } from 'react-router-hash-link'
-import { NavLink } from 'react-router-dom'
 import { NavContainer, NavList, ListItem } from '../styles/nav'
 import { LogoImage } from '../styles/styled'
 import parrots from '../assets/parrots.svg'
@@ -66,7 +65,6 @@ const Nav = () => {
           </NavHashLink>
         </ListItem>
       </NavList>
-      <NavLink to='/contact'>ContactForm</NavLink>
     </NavContainer>
   )
 }
