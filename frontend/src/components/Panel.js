@@ -9,17 +9,17 @@ import {
   CardP,
 } from '../styles/styled'
 
-const Panel = ({ id, data, title, subtitle }) => {
+const Panel = ({ id, data, title, subtitle, width, height }) => {
   return (
     <WrapperCentringDiv id={id}>
-      <CardH2>{title}</CardH2>{' '}
+      <CardH2>{title}</CardH2> <CardP>{subtitle}</CardP>
       <CardWrapper>
         {' '}
         {data.map((example) => (
           <CardProper key={example.id}>
             <StyledImage
-              width='100%'
-              height='60%'
+              width={width}
+              height={height}
               src={example.picture}
               alt='yoga girl'
             />
@@ -28,7 +28,6 @@ const Panel = ({ id, data, title, subtitle }) => {
           </CardProper>
         ))}{' '}
       </CardWrapper>
-      <CardP>{subtitle}</CardP>
     </WrapperCentringDiv>
   )
 }

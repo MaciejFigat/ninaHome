@@ -109,6 +109,7 @@ export const CardP = styled.p`
   margin-right: 1rem;
   min-width: fit-content;
   font-weight: 500;
+  font-size: 1.15rem;
   border-bottom: solid 1.5px var(--color2-main);
   @media (max-width: 770px) {
     margin-left: 0.5rem;

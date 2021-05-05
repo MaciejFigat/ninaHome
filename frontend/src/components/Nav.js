@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactIcons from '../components/ContactIcons'
 import { NavHashLink } from 'react-router-hash-link'
 import { NavContainer, NavList, ListItem } from '../styles/nav'
 import { LogoImage } from '../styles/styled'
@@ -63,6 +64,9 @@ const Nav = () => {
           >
             Kontakt
           </NavHashLink>
+        </ListItem>
+        <ListItem>
+          <ContactIcons />
         </ListItem>
       </NavList>
     </NavContainer>

@@ -32,7 +32,7 @@ export const ListItem = styled.li`
     color: purple;
   }
   @media (max-width: 740px) {
-    font-size: 1rem;
-    margin-right: 0.5rem;
+    font-size: 0.85rem;
+    margin-right: 0.25rem;
   }
 `
