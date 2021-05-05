@@ -9,6 +9,9 @@ import {
   CardH3,
   CardH2,
 } from '../styles/styled'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { fitnessData } from '../data/fitness'
 import { plansData } from '../data/plans'
 import { offerData } from '../data/offer'
@@ -54,18 +57,30 @@ const Home = () => {
           </CardProper>
           <CardProper>
             <CardH3>
-              <NavLink to='/contact'>Kontakt mailowy</NavLink>
+              <NavLink to='/contact' aria-label='contact'>
+                <FontAwesomeIcon icon={faEnvelopeSquare} />
+              </NavLink>
             </CardH3>
           </CardProper>
           <CardProper>
             <CardH3>
               {' '}
-              <a href=''>Instagram</a>
+              <a
+                href='https://www.instagram.com/ninaolgakirylowicz/'
+                aria-label='instagram'
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
             </CardH3>
           </CardProper>
           <CardProper>
             <CardH3>
-              <a href=''>TikTok</a>{' '}
+              <a
+                href='https://www.facebook.com/profile.php?id=100044161188998'
+                aria-label='facebook'
+              >
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>{' '}
             </CardH3>
           </CardProper>
         </CardWrapper>
