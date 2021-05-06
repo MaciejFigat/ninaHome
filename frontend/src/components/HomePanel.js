@@ -12,10 +12,15 @@ import {
 import {
   ListWrapper,
   ListItem,
-  ListMarker,
+  ListTitle,
+  ListTitleContainer,
   ListRow,
+  ListImage,
 } from '../styles/homePanel.js'
-function Item() {
+import parrots from '../assets/parrots.svg'
+import { fitnessData } from '../data/fitness'
+
+function Item({ picture, title, description }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleOpen = () => setIsOpen(!isOpen)
@@ -27,13 +32,30 @@ function Item() {
       onClick={toggleOpen}
       initial={{ borderRadius: 10 }}
     >
-      <ListMarker as={motion.div} layout />
-      <AnimatePresence>{isOpen && <Content />}</AnimatePresence>
+      <ListTitleContainer as={motion.div}>
+        <ListImage
+          src={parrots}
+          as={motion.img}
+          width='23%'
+          height='3%'
+          layout
+        />
+
+        <ListTitle as={motion.h2} layout>
+          {title}
+        </ListTitle>
+      </ListTitleContainer>
+
+      <AnimatePresence>
+        {isOpen && (
+          <Content picture={picture} title={title} description={description} />
+        )}
+      </AnimatePresence>
     </ListItem>
   )
 }
 
-function Content() {
+function Content({ picture, title, description }) {
   return (
     <motion.div
       layout
@@ -41,21 +63,27 @@ function Content() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <ListRow as={motion.div}></ListRow>
-      <ListRow as={motion.div}></ListRow>
-      <ListRow as={motion.div}></ListRow>
+      <ListRow as={motion.div}>{description}</ListRow>
     </motion.div>
   )
 }
-
+// <ListRow as={motion.div}>
+//         <img src={picture} alt='ilustration' />
+//       </ListRow>
+//       <ListRow as={motion.div}>{title}</ListRow>
+//  <CoverImage src={item.picture} alt='ilustration' />
 const HomePanel = () => {
-  const items = [0, 1, 2, 4]
   return (
     <>
       <AnimateSharedLayout>
         <ListWrapper as={motion.ul} layout initial={{ borderRadius: 25 }}>
-          {items.map((item) => (
-            <Item key={item} />
+          {fitnessData.map((item) => (
+            <Item
+              key={item.id}
+              picture={item.picture}
+              title={item.title}
+              description={item.description}
+            />
           ))}
         </ListWrapper>{' '}
       </AnimateSharedLayout>

@@ -31,6 +31,7 @@ body {
    
     --background1-main: #282c34;
     --background2-main: #18191c;
+    --background3-main: #115363;
 
     
 

@@ -8,7 +8,12 @@ const Nav = () => {
   return (
     <NavContainer>
       <NavList>
-        <LogoImage src={parrots} width='8%' height='3%' />
+        <LogoImage
+          src={parrots}
+          width='8%'
+          height='3%'
+          // style={{ fill: '#236677' }}
+        />
 
         <ListItem>
           {' '}

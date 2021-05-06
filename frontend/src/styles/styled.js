@@ -26,7 +26,10 @@ export const LogoImage = styled.img`
   width: ${(props) => (props.width ? props.width : '50%')};
   height: ${(props) => (props.height ? props.height : '50%')};
   object-fit: cover;
-  fill: var(--text-main) !important;
+
+  /* svg {
+    fill: var(--text-main) !important;
+  } */
   margin-right: 1rem;
   @media (max-width: 740px) {
     margin-right: 0.5rem;
