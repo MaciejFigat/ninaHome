@@ -15,12 +15,15 @@ import {
   ListTitle,
   ListTitleContainer,
   ListRow,
-  ListImage,
+  Container,
 } from '../styles/homePanel.js'
-import parrots from '../assets/parrots.svg'
+// import parrots from '../assets/parrots.svg'
 import { fitnessData } from '../data/fitness'
+import { ReactComponent as Parrots } from '../assets/parrots.svg'
+// import SvgComponent from '../components/SvgComponent'
+import SvgIcon from '../components/SvgIcon'
 
-function Item({ picture, title, description }) {
+function Item({ picture, title, description, svgColor }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleOpen = () => setIsOpen(!isOpen)
@@ -31,17 +34,18 @@ function Item({ picture, title, description }) {
       layout
       onClick={toggleOpen}
       initial={{ borderRadius: 10 }}
+      // <SvgComponent color={svgColor} width='6rem' height='6rem' /> {title}
     >
       <ListTitleContainer as={motion.div}>
-        <ListImage
-          src={parrots}
-          as={motion.img}
-          width='23%'
-          height='3%'
-          layout
-        />
-
         <ListTitle as={motion.h2} layout>
+          <Container width={6} height={4}>
+            <SvgIcon
+              Icon={Parrots}
+              width={5.5}
+              height={5}
+              fillColor={svgColor}
+            />{' '}
+          </Container>
           {title}
         </ListTitle>
       </ListTitleContainer>
@@ -72,6 +76,7 @@ function Content({ picture, title, description }) {
 //       </ListRow>
 //       <ListRow as={motion.div}>{title}</ListRow>
 //  <CoverImage src={item.picture} alt='ilustration' />
+// <SvgComponent color='coral' />
 const HomePanel = () => {
   return (
     <>
@@ -83,6 +88,7 @@ const HomePanel = () => {
               picture={item.picture}
               title={item.title}
               description={item.description}
+              svgColor={item.color}
             />
           ))}
         </ListWrapper>{' '}

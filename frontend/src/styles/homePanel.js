@@ -26,7 +26,6 @@ export const ListImage = styled.img`
   width: ${(props) => (props.width ? props.width : '50%')};
   height: ${(props) => (props.height ? props.height : '50%')};
   object-fit: cover;
-  /* display: none; */
   fill: var(--color1-secondary) !important;
   svg {
   }
@@ -53,7 +52,31 @@ export const ListTitleContainer = styled(motion.div)`
   justify-content: left;
 `
 export const ListTitle = styled(motion.h2)`
+  display: flex;
+  align-items: center;
+  justify-content: left;
   margin: 0;
   margin-left: 0.5rem;
   font-size: 1.5rem;
+`
+export const Container = styled.div`
+  height: ${(props) => (props.height ? `${props.height}rem` : '100%')};
+  width: ${(props) => (props.width ? `${props.width}rem` : '100%')};
+`
+
+export const SvgContainer = styled.div`
+  height: 'auto';
+  width: 'auto';
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  & svg {
+    fill: ${(props) => (props.fillColor ? `${props.fillColor}` : 'yellow')};
+    height: ${(props) => (props.height ? `${props.height}rem` : '100%')};
+    width: ${(props) => (props.width ? `${props.width}rem` : '100%')};
+    /* min-width: fit-content; */
+    /* min-height: fit-content; */
+  }
 `

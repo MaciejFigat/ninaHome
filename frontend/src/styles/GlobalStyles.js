@@ -33,7 +33,9 @@ body {
     --background2-main: #18191c;
     --background3-main: #115363;
 
-    
+    svg {
+      margin-right: 0.5rem;
+    }
 
     a, a:link, a:visited {
       text-decoration: none;

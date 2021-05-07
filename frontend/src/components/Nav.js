@@ -1,19 +1,21 @@
 import React from 'react'
-import ContactIcons from '../components/ContactIcons'
+import ContactIcons from './ContactIcons'
 import { NavHashLink } from 'react-router-hash-link'
 import { NavContainer, NavList, ListItem } from '../styles/nav'
-import { LogoImage } from '../styles/styled'
-import parrots from '../assets/parrots.svg'
+// import { LogoImage } from '../styles/styled'
+// import parrots from '../assets/parrots.svg'
+import SvgComponent from './SvgComponent'
+// <LogoImage
+//   src={parrots}
+//   width='8%'
+//   height='3%'
+//   style={{ fill: '#236677' }}
+// />
 const Nav = () => {
   return (
     <NavContainer>
       <NavList>
-        <LogoImage
-          src={parrots}
-          width='8%'
-          height='3%'
-          // style={{ fill: '#236677' }}
-        />
+        <SvgComponent color='lightcoral' width='3.25rem' height='3.25rem' />
 
         <ListItem>
           {' '}
@@ -45,7 +47,7 @@ const Nav = () => {
             activeClassName='selected'
             activeStyle={{ fontWeight: 'bold', color: 'lightcoral' }}
           >
-            Ćwiczenia
+            Exe
           </NavHashLink>
         </ListItem>
         <ListItem>
