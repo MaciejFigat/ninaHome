@@ -7,18 +7,21 @@ const offerData = [
     title: 'Template title 1',
     description:
       'Moim celem jest odpowiednia ocena możliwości klienta i przyspieszenie progresu w wybranej dziedzinie ruchu.',
+    color: '#fec89a',
   },
   {
     id: 2,
     picture: mirror,
     title: 'Template title 2',
     description: 'emplate desc 2',
+    color: '#ffd7ba',
   },
   {
     id: 3,
     picture: mirror,
     title: 'Template title 3',
     description: 'emplate desc 3',
+    color: '#ffe5d9',
   },
 ]
 

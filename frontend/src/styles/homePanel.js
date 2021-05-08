@@ -76,7 +76,5 @@ export const SvgContainer = styled.div`
     fill: ${(props) => (props.fillColor ? `${props.fillColor}` : 'yellow')};
     height: ${(props) => (props.height ? `${props.height}rem` : '100%')};
     width: ${(props) => (props.width ? `${props.width}rem` : '100%')};
-    /* min-width: fit-content; */
-    /* min-height: fit-content; */
   }
 `

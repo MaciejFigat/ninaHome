@@ -6,18 +6,21 @@ const plansData = [
     picture: mirror,
     title: 'Template title 1',
     description: 'Template desc 1',
+    color: '#40916c',
   },
   {
     id: 2,
     picture: mirror,
     title: 'Template title 2',
     description: 'emplate desc 2',
+    color: '#52b788',
   },
   {
     id: 3,
     picture: mirror,
     title: 'Template title 3',
     description: 'emplate desc 3',
+    color: '#74c69d',
   },
 ]
 
