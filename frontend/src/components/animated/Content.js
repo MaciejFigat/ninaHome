@@ -2,7 +2,7 @@ import React from 'react'
 import { ListRow } from '../../styles/homePanel.js'
 import { motion } from 'framer-motion'
 
-function Content({ picture, title, description }) {
+function Content({ description }) {
   return (
     <motion.div
       layout

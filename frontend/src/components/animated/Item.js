@@ -4,7 +4,8 @@ import {
   ListTitle,
   ListTitleContainer,
   Container,
-} from '../../styles/homePanel.js'
+} from '../../styles/homePanel'
+
 import { motion, AnimatePresence } from 'framer-motion'
 import SvgIcon from '../SvgIcon'
 import Content from './Content'
@@ -29,7 +30,6 @@ function Item({ picture, title, description, svgColor, Icon }) {
           {title}
         </ListTitle>
       </ListTitleContainer>
-
       <AnimatePresence>
         {isOpen && (
           <Content picture={picture} title={title} description={description} />

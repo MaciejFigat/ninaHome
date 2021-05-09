@@ -1,6 +1,17 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 // ListWrapper, ListItem, ListMarker, ListRow
+export const PictureListWrapper = styled(motion.ul)`
+  display: flex;
+  flex-direction: row;
+  /* row-width: */
+  width: 80vw;
+  @media (max-width: 740px) {
+    width: 95vw;
+    flex-direction: column;
+  }
+`
+
 export const ListWrapper = styled(motion.ul)`
   display: flex;
   flex-direction: column;
@@ -11,10 +22,28 @@ export const ListWrapper = styled(motion.ul)`
   max-width: 88vw;
   border-radius: 25px;
 `
+export const PictureWrapper = styled(motion.div)`
+  /* display: flex; */
+  /* flex-direction: column; */
+  background-color: var(--background2-main);
+  padding: 20px;
+  color: var(--text-main);
+  /* width: 600px; */
+  /* max-width: 88vw; */
+  border-radius: 25px;
+  width: 33vw;
+  /* max-width: fit-content; */
+`
+
+export const ItemWrapper = styled(motion.div)`
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+`
 export const ListItem = styled(motion.li)`
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 20px;
   overflow: hidden;
   background-color: var(--background1-main);
   cursor: pointer;
