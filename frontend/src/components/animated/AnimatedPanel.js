@@ -26,7 +26,7 @@ const AnimatedPanel = ({ data, Icon }) => {
         <ListPicture
           as={motion.img}
           width='40vw'
-          height='40vh'
+          height='50vh'
           // initial={{ borderRadius: 25 }}
           // initial={{ opacity: 0 }}
           // animate={{ opacity: 1 }}

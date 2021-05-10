@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 export const PictureListWrapper = styled(motion.ul)`
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   @media (max-width: 740px) {
     flex-direction: column;
     padding: 0;
@@ -17,7 +18,7 @@ export const ListWrapper = styled(motion.ul)`
   padding: 20px;
   color: var(--text-main);
   /* width: 600px; */
-  /* max-width: 88vw; */
+  max-width: 35vw;
   border-radius: 25px;
   justify-content: center;
   max-height: fit-content;
