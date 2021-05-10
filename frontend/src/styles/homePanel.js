@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 export const PictureListWrapper = styled(motion.ul)`
   display: flex;
   flex-direction: row;
-
   @media (max-width: 740px) {
     flex-direction: column;
     padding: 0;
@@ -17,21 +16,25 @@ export const ListWrapper = styled(motion.ul)`
   background-color: var(--background2-main);
   padding: 20px;
   color: var(--text-main);
-  width: 600px;
-  max-width: 88vw;
+  /* width: 600px; */
+  /* max-width: 88vw; */
   border-radius: 25px;
+  max-height: fit-content;
+  @media (max-width: 740px) {
+    margin-top: 10px;
+  }
 `
 export const PictureWrapper = styled(motion.div)`
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   /* background-color: var(--background2-main); */
-  padding: 20px;
+  /* padding: 20px; */
   color: var(--text-main);
   width: 600px;
-  align-items: center;
-  justify-content: center;
-  margin-left: 20px;
-  /* margin-right: 20px; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* margin-left: 20px; */
+  margin-right: 20px;
   @media (max-width: 740px) {
     margin-top: 10px;
     margin-left: 0px;

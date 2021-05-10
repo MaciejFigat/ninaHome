@@ -9,6 +9,8 @@ const fitnessData = [
     title: 'Trening funkcjonalny',
     description:
       'Moje podejście do klienta charakteryzuje indywidualizm i odpowiednie dostosowywanie bodźców treningowych.',
+    description2:
+      'Moje podejście do klienta charakteryzuje indywidualizm i odpowiednie dostosowywanie bodźców treningowych. Moje podejście do klienta charakteryzuje indywidualizm i odpowiednie dostosowywanie bodźców treningowych.',
     color: '#a2d2ff',
   },
   {
@@ -17,6 +19,8 @@ const fitnessData = [
     title: 'Różnorodne płaszczyzny',
     description:
       'Szczególną uwagę zwracam na wzmacnianie ciała w różnych płaszczyznach tak by nie przeciążać wciąż tych samych struktur.',
+    description2:
+      'Moje podejście do klienta charakteryzuje indywidualizm i odpowiednie dostosowywanie bodźców treningowych. Moje podejście do klienta charakteryzuje indywidualizm i odpowiednie dostosowywanie bodźców treningowych.',
     color: '#ffc8dd',
   },
   {
@@ -25,6 +29,8 @@ const fitnessData = [
     title: 'Rozpoznanie przeszkód',
     description:
       'Staram się eliminować szkodliwe wzorce ruchowe, oraz eliminować słabe ogniwa układ ruchu.',
+    description2:
+      'Moje podejście do klienta charakteryzuje indywidualizm i odpowiednie dostosowywanie bodźców treningowych. Moje podejście do klienta charakteryzuje indywidualizm i odpowiednie dostosowywanie bodźców treningowych.',
     color: '#cdb4db',
   },
 ]
