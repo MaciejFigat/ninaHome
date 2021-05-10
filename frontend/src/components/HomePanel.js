@@ -20,6 +20,7 @@ const HomePanel = () => {
       <AnimatedPanel data={fitnessData} Icon={Parrots} />
       <AnimatedPanel data={offerData} Icon={Parrots} />
       <AnimatedPanel data={plansData} Icon={Parrots} />
+
       <WrapperCentringDiv id='home'>
         {' '}
         <CardWrapper>

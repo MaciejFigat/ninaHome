@@ -12,14 +12,14 @@ const plansData = [
     id: 2,
     picture: mirror,
     title: 'Template title 2',
-    description: 'emplate desc 2',
+    description: 'template desc 2',
     color: '#52b788',
   },
   {
     id: 3,
     picture: mirror,
     title: 'Template title 3',
-    description: 'emplate desc 3',
+    description: 'template desc 3',
     color: '#74c69d',
   },
 ]

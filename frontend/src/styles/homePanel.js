@@ -4,11 +4,10 @@ import { motion } from 'framer-motion'
 export const PictureListWrapper = styled(motion.ul)`
   display: flex;
   flex-direction: row;
-  /* row-width: */
-  width: 80vw;
+
   @media (max-width: 740px) {
-    width: 95vw;
     flex-direction: column;
+    padding: 0;
   }
 `
 
@@ -25,14 +24,38 @@ export const ListWrapper = styled(motion.ul)`
 export const PictureWrapper = styled(motion.div)`
   /* display: flex; */
   /* flex-direction: column; */
-  background-color: var(--background2-main);
+  /* background-color: var(--background2-main); */
   padding: 20px;
   color: var(--text-main);
-  /* width: 600px; */
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  /* margin-right: 20px; */
+  @media (max-width: 740px) {
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+
   /* max-width: 88vw; */
   border-radius: 25px;
-  width: 33vw;
   /* max-width: fit-content; */
+`
+
+export const ListPicture = styled.img`
+  width: ${(props) => (props.width ? props.width : '300px')};
+  height: ${(props) => (props.height ? props.height : '20vh')};
+  object-fit: cover;
+  /* object-fit: contain; */
+  /* padding-bottom: 1rem; */
+  border-radius: 25px;
+  @media (max-width: 740px) {
+    object-fit: contain;
+    width: 100%;
+  }
 `
 
 export const ItemWrapper = styled(motion.div)`
