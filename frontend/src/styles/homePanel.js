@@ -19,6 +19,7 @@ export const ListWrapper = styled(motion.ul)`
   /* width: 600px; */
   /* max-width: 88vw; */
   border-radius: 25px;
+  justify-content: center;
   max-height: fit-content;
   @media (max-width: 740px) {
     margin-top: 10px;
