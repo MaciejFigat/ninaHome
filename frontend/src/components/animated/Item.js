@@ -10,7 +10,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import SvgIcon from '../SvgIcon'
 import Content from './Content'
 
-function Item({ picture, title, description, svgColor, Icon }) {
+const Item = ({ picture, title, description, svgColor, Icon }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleOpen = () => setIsOpen(!isOpen)

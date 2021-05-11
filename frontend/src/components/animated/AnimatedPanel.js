@@ -16,38 +16,38 @@ const AnimatedPanel = ({ data, Icon }) => {
 
   return (
     <PictureListWrapper>
-      <PictureWrapper
-        as={motion.div}
-        layout
-        initial={{ opacity: 1 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0.5 }}
-      >
-        <ListPicture
-          as={motion.img}
-          width='40vw'
-          height='50vh'
-          // initial={{ borderRadius: 25 }}
-          // initial={{ opacity: 0 }}
-          // animate={{ opacity: 1 }}
-          // exit={{ opacity: 0 }}
-          // drag
-          // dragConstraints={{
-          //   top: 10,
-          //   left: 10,
-          //   right: 10,
-          //   bottom: 10,
-          // }}
-          // layout
-          src={data[panelNumber].picture}
-          alt='ilustration'
-        />
-
-        {data[panelNumber].description2 && (
-          <Content description={data[panelNumber].description2} />
-        )}
-      </PictureWrapper>
       <AnimateSharedLayout>
+        <PictureWrapper
+          as={motion.div}
+          layout
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0.5 }}
+        >
+          <ListPicture
+            as={motion.img}
+            width='40vw'
+            height='50vh'
+            // initial={{ borderRadius: 25 }}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // exit={{ opacity: 0 }}
+            // drag
+            // dragConstraints={{
+            //   top: 10,
+            //   left: 10,
+            //   right: 10,
+            //   bottom: 10,
+            // }}
+            // layout
+            src={data[panelNumber].picture}
+            alt='ilustration'
+          />
+
+          {data[panelNumber].description2 && (
+            <Content description={data[panelNumber].description2} />
+          )}
+        </PictureWrapper>
         <ListWrapper as={motion.ul} layout initial={{ borderRadius: 25 }}>
           {data.map((item) => (
             <ItemWrapper

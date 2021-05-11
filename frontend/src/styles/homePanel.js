@@ -2,10 +2,12 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 // ListWrapper, ListItem, ListMarker, ListRow
 export const PictureListWrapper = styled(motion.ul)`
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   @media (max-width: 740px) {
+    height: fit-content;
     flex-direction: column;
     padding: 0;
   }
@@ -61,6 +63,7 @@ export const ListPicture = styled.img`
   @media (max-width: 740px) {
     object-fit: contain;
     width: 100%;
+    max-height: 30vh;
   }
 `
 
@@ -94,7 +97,7 @@ export const ListImage = styled.img`
 `
 
 export const ListRow = styled(motion.div)`
-  width: 90%;
+  width: 93%;
   /* height: 20px; */
   padding: 0.75rem;
   font-weight: 600;
@@ -108,6 +111,9 @@ export const ListTitleContainer = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: left;
+  @media (max-width: 740px) {
+    max-height: 2.5rem;
+  }
 `
 export const ListTitle = styled(motion.h2)`
   display: flex;
@@ -116,6 +122,10 @@ export const ListTitle = styled(motion.h2)`
   margin: 0;
   margin-left: 0.5rem;
   font-size: 1.5rem;
+  @media (max-width: 740px) {
+    font-size: 1.1rem;
+    margin-left: 0rem;
+  }
 `
 export const Container = styled.div`
   height: ${(props) => (props.height ? `${props.height}rem` : '100%')};
@@ -129,10 +139,18 @@ export const SvgContainer = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 740px) {
+    max-height: 3.5rem;
+    max-width: 3.5rem;
+  }
 
   & svg {
     fill: ${(props) => (props.fillColor ? `${props.fillColor}` : 'yellow')};
     height: ${(props) => (props.height ? `${props.height}rem` : '100%')};
     width: ${(props) => (props.width ? `${props.width}rem` : '100%')};
+    @media (max-width: 740px) {
+      max-height: 3.5rem;
+      max-width: 3.5rem;
+    }
   }
 `

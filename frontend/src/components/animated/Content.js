@@ -1,8 +1,7 @@
 import React from 'react'
 import { ListRow } from '../../styles/homePanel.js'
 import { motion } from 'framer-motion'
-
-function Content({ description }) {
+const Content = ({ description }) => {
   return (
     <motion.div
       layout
