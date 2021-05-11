@@ -31,13 +31,13 @@ const AnimatedPanel = ({ data, Icon }) => {
           // initial={{ opacity: 0 }}
           // animate={{ opacity: 1 }}
           // exit={{ opacity: 0 }}
-          drag
-          dragConstraints={{
-            top: 10,
-            left: 10,
-            right: 10,
-            bottom: 10,
-          }}
+          // drag
+          // dragConstraints={{
+          //   top: 10,
+          //   left: 10,
+          //   right: 10,
+          //   bottom: 10,
+          // }}
           // layout
           src={data[panelNumber].picture}
           alt='ilustration'

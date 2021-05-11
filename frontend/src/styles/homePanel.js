@@ -20,10 +20,11 @@ export const ListWrapper = styled(motion.ul)`
   /* width: 600px; */
   max-width: 35vw;
   border-radius: 25px;
-  justify-content: center;
-  max-height: fit-content;
+  /* justify-content: center; */
+  height: fit-content;
   @media (max-width: 740px) {
     margin-top: 10px;
+    max-width: 100vw;
   }
 `
 export const PictureWrapper = styled(motion.div)`
