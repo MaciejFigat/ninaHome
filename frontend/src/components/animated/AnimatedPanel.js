@@ -4,11 +4,10 @@ import {
   ItemWrapper,
   PictureWrapper,
   PictureListWrapper,
-  ListPicture,
 } from '../../styles/homePanel.js'
-import { motion, AnimateSharedLayout } from 'framer-motion'
+import { motion, AnimateSharedLayout, AnimatePresence } from 'framer-motion'
+import ImageAnimated from './ImageAnimated'
 import Item from './Item'
-// import { CoverImage } from '../../styles/styled'
 import Content from './Content'
 
 const AnimatedPanel = ({ data, Icon }) => {
@@ -24,28 +23,22 @@ const AnimatedPanel = ({ data, Icon }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0.5 }}
         >
-          <ListPicture
-            as={motion.img}
-            width='40vw'
-            height='50vh'
-            // initial={{ borderRadius: 25 }}
-            // initial={{ opacity: 0 }}
-            // animate={{ opacity: 1 }}
-            // exit={{ opacity: 0 }}
-            // drag
-            // dragConstraints={{
-            //   top: 10,
-            //   left: 10,
-            //   right: 10,
-            //   bottom: 10,
-            // }}
-            // layout
+          <ImageAnimated
             src={data[panelNumber].picture}
-            alt='ilustration'
+            id={data[panelNumber].id}
+            width='50vw'
+            height='60vh'
           />
-
           {data[panelNumber].description2 && (
-            <Content description={data[panelNumber].description2} />
+            <>
+              {' '}
+              <AnimatePresence exitBeforeEnter>
+                <Content
+                  description={data[panelNumber].description2}
+                  key={data[panelNumber].id}
+                />
+              </AnimatePresence>
+            </>
           )}
         </PictureWrapper>
         <ListWrapper as={motion.ul} layout initial={{ borderRadius: 25 }}>

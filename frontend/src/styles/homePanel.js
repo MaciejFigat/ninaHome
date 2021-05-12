@@ -3,8 +3,10 @@ import { motion } from 'framer-motion'
 // ListWrapper, ListItem, ListMarker, ListRow
 export const PictureListWrapper = styled(motion.ul)`
   height: 100vh;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
+  /* align-items: center; */
   justify-content: space-around;
   @media (max-width: 740px) {
     height: fit-content;
@@ -19,7 +21,7 @@ export const ListWrapper = styled(motion.ul)`
   background-color: var(--background2-main);
   padding: 20px;
   color: var(--text-main);
-  /* width: 600px; */
+  width: 400px;
   max-width: 35vw;
   border-radius: 25px;
   /* justify-content: center; */
@@ -27,6 +29,7 @@ export const ListWrapper = styled(motion.ul)`
   @media (max-width: 740px) {
     margin-top: 10px;
     max-width: 100vw;
+    width: 320px;
   }
 `
 export const PictureWrapper = styled(motion.div)`
