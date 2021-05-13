@@ -5,10 +5,11 @@ import { plansData } from '../data/plans'
 import { offerData } from '../data/offer'
 import Panel from '../components/Panel'
 import HomePanel from '../components/HomePanel'
-
+import ParallaxComponent from '../components/animated/ParalaxComponent'
 const Home = () => {
   return (
     <>
+      <ParallaxComponent />
       <HomePanel />
       <Panel
         id='fitness'
