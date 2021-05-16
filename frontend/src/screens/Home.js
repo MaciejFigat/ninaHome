@@ -3,46 +3,35 @@ import React from 'react'
 import { fitnessData } from '../data/fitness'
 import { plansData } from '../data/plans'
 import { offerData } from '../data/offer'
-import Panel from '../components/Panel'
-import HomePanel from '../components/HomePanel'
+// import Panel from '../components/Panel'
+// import HomePanel from '../components/HomePanel'
 import ParallaxComponent from '../components/animated/ParalaxComponent'
+import ParallaxTextBubble from '../components/animated/ParallaxTextBubble'
 const Home = () => {
   return (
     <>
-      <ParallaxComponent />
-      <HomePanel />
-      <Panel
-        id='fitness'
-        data={fitnessData}
-        title='Fitness'
-        subtitle='Zdrowe podejście do wysiłku sportowego'
-        width='100%'
-        height='60%'
-      />
-      <Panel
-        id='plans'
-        data={offerData}
-        title='Plany treningowe'
-        subtitle='Indywidualne podejście'
-        width='100%'
-        height='60%'
-      />
-      <Panel
-        id='training'
-        data={plansData}
-        title='Periodyzacja treningowa'
-        subtitle='Różnicowanie natężenia wysiłku fizycznego'
-        width='100%'
-        height='60%'
-      />
-      <Panel
-        id='ending'
-        data={fitnessData}
-        title='Przekrojowe podejście'
-        subtitle='Jestem trenerem medycznym i wiem najlepiej.'
-        width='60%'
-        height='60%'
-      />
+      <div id='home'>
+        {' '}
+        <ParallaxTextBubble title='Zdrowy trening' />
+      </div>
+      <div id='fitness'>
+        <ParallaxTextBubble title={fitnessData[0].title} />{' '}
+      </div>
+      <ParallaxComponent data={fitnessData} />
+      <div id='plans'>
+        {' '}
+        <ParallaxTextBubble title={plansData[0].title} />
+      </div>
+      <ParallaxComponent data={plansData} />
+      <div id='training'>
+        {' '}
+        <ParallaxTextBubble title={offerData[0].title} />
+      </div>
+      <ParallaxComponent data={offerData} />
+      <div id='ending'>
+        {' '}
+        <ParallaxTextBubble title='The end' />
+      </div>
     </>
   )
 }

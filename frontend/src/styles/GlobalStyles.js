@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 html {
   font-size: 100%;
   
@@ -9,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: var(--background1-main);  
+    background-color: var(--background4-main);  
     font-family: 'Quicksand', sans-serif; 
 }
 
@@ -22,6 +25,11 @@ body {
     --text2-main: #d996a8;
     --text3-main: #d4b8c0;
     --border-main: pink;
+    --border-main2: green;
+    --border-main3: brown;
+    --border-main4: yellow;
+    --border-main5: silver;
+    --border-main6: gold;
 
     --color1-secondary: #236677;
     --color2-secondary: #1bb9ac;
@@ -32,6 +40,8 @@ body {
     --background1-main: #282c34;
     --background2-main: #18191c;
     --background3-main: #115363;
+    --background4-main: #3b6fe0;
+    
 
     svg {
       // margin-right: 0.5rem;
@@ -47,6 +57,7 @@ body {
       color: pink;
       transition: 0.3s; 
     }
+    
     
 }
 ::-webkit-scrollbar {

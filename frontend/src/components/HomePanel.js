@@ -9,6 +9,7 @@ import {
   CardH2,
 } from '../styles/styled'
 import AnimatedPanel from './animated/AnimatedPanel'
+
 import { fitnessData } from '../data/fitness'
 import { offerData } from '../data/offer'
 import { plansData } from '../data/plans'
