@@ -24,6 +24,7 @@ body {
     --text-main: lightcoral;
     --text2-main: #d996a8;
     --text3-main: #d4b8c0;
+    --text4-main: #393232;
     --border-main: pink;
     --border-main2: green;
     --border-main3: brown;

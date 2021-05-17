@@ -1,21 +1,16 @@
 import React, { useRef, useState, useLayoutEffect } from 'react'
 import { useViewportScroll, motion, useTransform } from 'framer-motion'
-// import { useInView } from 'react-intersection-observer'
 import {
   ParallaxContainer,
   ParallaxBox,
   ParallaxBoxTwo,
   ParallaxBoxThree,
-  //   ParallaxBoxTwoContent,
 } from '../../styles/parallaxCompStyled'
 
-// import { fitnessData } from '../../data/fitness'
-// style={{ scaleX: scrollYProgress }}
-const ParalaxTextBubble = ({ title }) => {
+const ParalaxTextBubble = ({ title, kettleData }) => {
   const { scrollY } = useViewportScroll()
   const ref = useRef()
   const [offsetTop, setOffsetTop] = useState(0)
-  // const { scrollY, scrollYProgress } = useViewportScroll()
 
   useLayoutEffect(() => {
     if (!ref.current) return null
@@ -33,53 +28,95 @@ const ParalaxTextBubble = ({ title }) => {
     [offsetTop - 150, offsetTop + 150],
     [-200, 100]
   )
-  const y4 = useTransform(
+  const y4 = useTransform(scrollY, [offsetTop + 50, offsetTop + 150], [0, 10])
+  const y5 = useTransform(
     scrollY,
-    [offsetTop - 150, offsetTop + 150],
-    [-100, 200]
+    [offsetTop - 350, offsetTop + 50],
+    [-100, 100]
   )
 
   return (
     <ParallaxContainer ref={ref}>
-      <ParallaxBox
-        as={motion.div}
-        style={{ y: y1, x: -150 }}
-        borderColor='brown'
-      ></ParallaxBox>
       <ParallaxBoxTwo
         as={motion.div}
-        style={{ y: y1, x: 10, background: 'brown' }}
+        style={{ y: y5, x: 0 }}
+        borderColor={kettleData[1].color}
       >
         <h1>{title}</h1>
       </ParallaxBoxTwo>
-      <ParallaxBox
-        as={motion.div}
-        style={{ y: y2, x: 50 }}
-        borderColor='pink'
-      ></ParallaxBox>
-      <ParallaxBox
-        as={motion.div}
-        style={{ y: y3, x: -50 }}
-        borderColor='gold'
-      ></ParallaxBox>
-      <ParallaxBox
-        as={motion.div}
-        style={{ y: y4, x: -150 }}
-        borderColor='green'
-      ></ParallaxBox>
-      <ParallaxBox
-        as={motion.div}
-        style={{ y: y3, x: 50 }}
-        borderColor='darkblue'
-      ></ParallaxBox>
-
-      <div style={{ position: 'fixed', top: 0, left: 0 }}> </div>
-      <ParallaxBoxThree
-        as={motion.div}
-        style={{ y: y3, x: 0, background: 'white' }}
-      ></ParallaxBoxThree>
+      {kettleData.map((example) => (
+        <div key={example.id}>
+          {example.title && (
+            <ParallaxBoxThree
+              as={motion.div}
+              style={{ y: y1, x: 0 }}
+              borderColor={example.color}
+              title={example.title}
+            />
+          )}
+          {example.yPosition === 1 && (
+            <ParallaxBox
+              as={motion.div}
+              style={{ y: y1, x: example.xPosition }}
+              borderColor={example.color}
+            />
+          )}
+          {example.yPosition === 2 && (
+            <ParallaxBox
+              as={motion.div}
+              style={{ y: y2, x: example.xPosition }}
+              borderColor={example.color}
+            />
+          )}
+          {example.yPosition === 3 && (
+            <ParallaxBox
+              as={motion.div}
+              style={{ y: y3, x: example.xPosition }}
+              borderColor={example.color}
+            />
+          )}
+          {example.yPosition === 4 && (
+            <ParallaxBox
+              as={motion.div}
+              style={{ y: y4, x: example.xPosition }}
+              borderColor={example.color}
+            />
+          )}
+        </div>
+      ))}
     </ParallaxContainer>
   )
 }
 
 export default ParalaxTextBubble
+
+//       <ParallaxBoxTwo
+//         as={motion.div}
+//         style={{ y: y1, x: -100, background: 'brown' }}
+//       >
+//         <h1>{title}</h1>
+//       </ParallaxBoxTwo>
+//       <ParallaxBox
+//         as={motion.div}
+//         style={{ y: y2, x: 100 }}
+//         borderColor='pink'
+//       ></ParallaxBox>
+
+//       <ParallaxBox
+//         as={motion.div}
+//         style={{ y: y4, x: -150 }}
+//         borderColor='green'
+//       ></ParallaxBox>
+//       <ParallaxBox
+//         as={motion.div}
+//         style={{ y: y2, x: 350 }}
+//         borderColor='darkblue'
+//       ></ParallaxBox>
+
+//       <ParallaxBoxThree
+//         as={motion.div}
+//         style={{ y: y3, x: 0 }}
+//         borderColor='silver'
+//       >
+//         HELL
+//       </ParallaxBoxThree>
