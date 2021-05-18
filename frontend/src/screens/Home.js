@@ -4,32 +4,40 @@ import { fitnessData } from '../data/fitness'
 import { plansData } from '../data/plans'
 import { offerData } from '../data/offer'
 import { kettleData } from '../data/bubbles'
+import { kettleData2 } from '../data/kettlebells'
+import { SectionDiv } from '../styles/sectionStyled'
+import kettleParrot from '../assets/kettleParrot.svg'
+import kettleParrot2 from '../assets/kettleParrot2.svg'
+// import background2 from '../assets/backgrounds/background2.jpg'
 // import Panel from '../components/Panel'
 // import HomePanel from '../components/HomePanel'
-import ParallaxComponent from '../components/animated/ParalaxComponent'
+import ParallaxComponent from '../components/animated/ParallaxComponent'
 import ParallaxTextBubble from '../components/animated/ParallaxTextBubble'
+// backgroundImage={kettleParrot}
 const Home = () => {
   return (
     <>
-      <div id='home'>
+      <SectionDiv id='home' backgroundImage={kettleParrot}>
         {' '}
-        <ParallaxTextBubble title='Zdrowy trening' kettleData={kettleData} />
-      </div>
-      <div id='fitness'>
         <ParallaxTextBubble
-          title={fitnessData[0].title}
+          title='Trening medyczny'
+          kettleData={kettleData}
+        ></ParallaxTextBubble>
+        <ParallaxComponent data={offerData} />
+      </SectionDiv>
+      <SectionDiv id='fitness' backgroundImage={kettleParrot2}>
+        <ParallaxTextBubble
+          title='Przykładowy trening'
           kettleData={kettleData}
         />{' '}
-      </div>
-      <ParallaxComponent data={fitnessData} />
+        <ParallaxComponent data={plansData} />
+      </SectionDiv>
+
       <div id='plans'>
         {' '}
-        <ParallaxTextBubble
-          title={plansData[0].title}
-          kettleData={kettleData}
-        />
+        <ParallaxComponent data={fitnessData} />
       </div>
-      <ParallaxComponent data={plansData} />
+
       <div id='training'>
         {' '}
         <ParallaxTextBubble
@@ -37,10 +45,10 @@ const Home = () => {
           kettleData={kettleData}
         />
       </div>
-      <ParallaxComponent data={offerData} />
+
       <div id='ending'>
         {' '}
-        <ParallaxTextBubble title='The end' kettleData={kettleData} />
+        <ParallaxTextBubble title='The end' kettleData={kettleData2} />
       </div>
     </>
   )

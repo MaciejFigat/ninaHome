@@ -4,23 +4,25 @@ const offerData = [
   {
     id: 1,
     picture: mirror,
-    title: 'Template title 1',
+    title: 'Profilaktyka',
     description:
-      'Moim celem jest odpowiednia ocena możliwości klienta i przyspieszenie progresu w wybranej dziedzinie ruchu.',
+      'Trenując podopiecznych zwracam uwagę na aspekty prozdrowotne i profilaktyczne wysiłku fizycznego. ',
     color: '#fec89a',
   },
   {
     id: 2,
     picture: mirror,
-    title: 'Template title 2',
-    description: 'template desc 2',
+    title: 'Cele treningu',
+    description:
+      'W zależności od Twoich indywidualnych celów modyfikuję trening, tak aby ćwiczenia były praktyczne i skuteczne.',
     color: '#ffd7ba',
   },
   {
     id: 3,
     picture: mirror,
-    title: 'Template title 3',
-    description: 'template desc 3',
+    title: 'Przykład treningu',
+    description:
+      'Jednostka treningowa zajmuje około godziny, poniżej opiszę przykładowy trening dla osoby początkującej.',
     color: '#ffe5d9',
   },
 ]

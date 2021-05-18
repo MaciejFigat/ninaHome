@@ -7,7 +7,7 @@ import {
   ParallaxBoxThree,
 } from '../../styles/parallaxCompStyled'
 
-const ParalaxTextBubble = ({ title, kettleData }) => {
+const ParalaxTextBubble = ({ title, kettleData, backgroundImage }) => {
   const { scrollY } = useViewportScroll()
   const ref = useRef()
   const [offsetTop, setOffsetTop] = useState(0)
@@ -36,7 +36,7 @@ const ParalaxTextBubble = ({ title, kettleData }) => {
   )
 
   return (
-    <ParallaxContainer ref={ref}>
+    <ParallaxContainer ref={ref} backgroundImage={backgroundImage}>
       <ParallaxBoxTwo
         as={motion.div}
         style={{ y: y5, x: 0 }}
@@ -49,33 +49,34 @@ const ParalaxTextBubble = ({ title, kettleData }) => {
           {example.title && (
             <ParallaxBoxThree
               as={motion.div}
-              style={{ y: y1, x: 0 }}
+              style={{ y: y3, x: example.xPosition }}
               borderColor={example.color}
-              title={example.title}
-            />
+            >
+              <h4>{example.title}</h4>
+            </ParallaxBoxThree>
           )}
-          {example.yPosition === 1 && (
+          {!example.title && example.yPosition === 1 && (
             <ParallaxBox
               as={motion.div}
               style={{ y: y1, x: example.xPosition }}
               borderColor={example.color}
             />
           )}
-          {example.yPosition === 2 && (
+          {!example.title && example.yPosition === 2 && (
             <ParallaxBox
               as={motion.div}
               style={{ y: y2, x: example.xPosition }}
               borderColor={example.color}
             />
           )}
-          {example.yPosition === 3 && (
+          {!example.title && example.yPosition === 3 && (
             <ParallaxBox
               as={motion.div}
               style={{ y: y3, x: example.xPosition }}
               borderColor={example.color}
             />
           )}
-          {example.yPosition === 4 && (
+          {!example.title && example.yPosition === 4 && (
             <ParallaxBox
               as={motion.div}
               style={{ y: y4, x: example.xPosition }}

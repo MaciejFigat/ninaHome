@@ -3,15 +3,17 @@ import styled from 'styled-components'
 export const ParallaxContainer = styled.div`
   text-align: center;
   min-height: fit-content;
-  height: 200vh;
-  background-color: var(--background4-main);
+  /* height: 200vh; */
+  /* background-color: var(--background4-main); */
+  /* background-image: url(${(props) =>
+    props.backgroundImage ? props.backgroundImage : 'none'}); */
+  background-size: cover;
+  background-position: top;
   color: var(--text3-main);
   padding-top: 110px;
   padding-bottom: 110px;
   overflow: hidden;
   overflow-y: hidden;
-  /* overflow-y: auto; */
-  /* overflow: auto; */
 `
 export const ParallaxBox = styled.div`
   display: grid;
@@ -19,8 +21,6 @@ export const ParallaxBox = styled.div`
   width: 150px;
   height: 150px;
   font-size: 1rem;
-  /* min-width: fit-content; */
-  /* min-height: fit-content; */
   fill: var(--background1-main);
   object-fit: contain;
   border-radius: 50%;
@@ -66,7 +66,7 @@ export const ParallaxBoxTwoContent = styled.div`
 `
 export const ParallaxBoxThree = styled.div`
   display: grid;
-  color: black;
+  color: var(--text4-main);
   place-items: center;
   width: 150px;
   height: 150px;
@@ -78,27 +78,33 @@ export const ParallaxBoxThree = styled.div`
     props.borderColor ? props.borderColor : 'cyan'};
   margin-left: auto;
   margin-right: auto;
+  h4 {
+    z-index: 3;
+  }
   &:after {
-    content: ${(props) => (props.title ? props.title : '')};
-    /* content: ''; */
+    /* content: ${(props) => (props.title ? props.title : '')}; */
+    /* color: blueviolet !important; */
+    content: '';
     font-weight: 600;
     font-size: 3rem;
     height: 100px;
     width: 80px;
     border: solid 25px
       ${(props) => (props.borderColor ? props.borderColor : 'cyan')};
+    border-bottom: none;
     position: relative;
-    top: -50px;
-    border-radius: 35%;
-  }
-  &:before {
-    content: ${(props) => (props.title ? props.title : 'none')};
-    background-color: red;
-    /* color: var(--text4-main); */
-    position: relative;
-    top: 40px;
-    font-weight: 600;
-    font-size: 3rem;
+    top: -170px;
     border-radius: 35%;
   }
 `
+
+/* &:before {
+  content: ${(props) => (props.title ? props.title : 'none')};
+  background-color: red;
+ color: var(--text4-main);
+  position: relative;
+  top: 40px;
+  font-weight: 600;
+  font-size: 3rem;
+  border-radius: 35%;
+} */
