@@ -1,12 +1,14 @@
 import styled from 'styled-components'
 
 export const SectionDiv = styled.div`
-  background-image: url(${(props) =>
-    props.backgroundImage ? props.backgroundImage : 'none'});
-  /* background-size: cover; */
-  background-size: 100% auto;
+  background: url(${(props) =>
+      props.backgroundImage ? props.backgroundImage : 'none'})
+    no-repeat fixed;
+  background-size: 40% auto;
+  background-position: center 3rem;
   background-color: var(--background4-main);
-  fill: green !important;
-  color: green !important;
-  stroke: green !important;
+  @media (max-width: 740px) {
+    background-size: 100% auto;
+    background-position: center 50px;
+  }
 `

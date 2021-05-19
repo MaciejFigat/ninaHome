@@ -24,6 +24,7 @@ export const ListWrapper = styled(motion.ul)`
   width: 400px;
   max-width: 35vw;
   border-radius: 25px;
+  box-shadow: 3px 6px 5px 0px var(--background1-main);
   /* justify-content: center; */
   height: fit-content;
   @media (max-width: 740px) {
@@ -35,6 +36,7 @@ export const ListWrapper = styled(motion.ul)`
 export const PictureWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
+
   /* background-color: var(--background2-main); */
   /* padding: 20px; */
   color: var(--text-main);
@@ -60,6 +62,7 @@ export const ListPicture = styled.img`
   width: ${(props) => (props.width ? props.width : '300px')};
   height: ${(props) => (props.height ? props.height : '20vh')};
   object-fit: cover;
+  box-shadow: 3px 6px 5px 0px var(--background1-main);
   /* object-fit: contain; */
   /* padding-bottom: 1rem; */
   border-radius: 25px;
@@ -67,6 +70,7 @@ export const ListPicture = styled.img`
     object-fit: contain;
     width: 100%;
     max-height: 30vh;
+    box-shadow: none;
   }
 `
 

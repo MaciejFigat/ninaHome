@@ -24,10 +24,9 @@ export const ParallaxBox = styled.div`
   fill: var(--background1-main);
   object-fit: contain;
   border-radius: 50%;
-
   background-color: ${(props) =>
     props.borderColor ? props.borderColor : 'cyan'};
-
+  box-shadow: 3px 6px 5px 0px var(--background1-main);
   margin-left: auto;
   margin-right: auto;
   &:after {
@@ -55,12 +54,12 @@ export const ParallaxBoxTwo = styled.div`
   margin-left: auto;
   margin-right: auto;
   font-size: 1rem;
+  box-shadow: 3px 6px 5px 0px var(--background1-main);
 `
 export const ParallaxBoxTwoContent = styled.div`
   width: 100%;
-  /* height: 200px; */
   background-color: none;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-left: auto;
   margin-right: auto;
 `
@@ -78,12 +77,13 @@ export const ParallaxBoxThree = styled.div`
     props.borderColor ? props.borderColor : 'cyan'};
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 3px 6px 5px 0px var(--background1-main);
   h4 {
     z-index: 3;
   }
   &:after {
     /* content: ${(props) => (props.title ? props.title : '')}; */
-    /* color: blueviolet !important; */
+
     content: '';
     font-weight: 600;
     font-size: 3rem;
@@ -97,14 +97,3 @@ export const ParallaxBoxThree = styled.div`
     border-radius: 35%;
   }
 `
-
-/* &:before {
-  content: ${(props) => (props.title ? props.title : 'none')};
-  background-color: red;
- color: var(--text4-main);
-  position: relative;
-  top: 40px;
-  font-weight: 600;
-  font-size: 3rem;
-  border-radius: 35%;
-} */

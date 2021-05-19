@@ -7,7 +7,7 @@ import {
   ParallaxBoxThree,
 } from '../../styles/parallaxCompStyled'
 
-const ParalaxTextBubble = ({ title, kettleData, backgroundImage }) => {
+const ParalaxTextBubble = ({ title, kettleData }) => {
   const { scrollY } = useViewportScroll()
   const ref = useRef()
   const [offsetTop, setOffsetTop] = useState(0)
@@ -36,7 +36,7 @@ const ParalaxTextBubble = ({ title, kettleData, backgroundImage }) => {
   )
 
   return (
-    <ParallaxContainer ref={ref} backgroundImage={backgroundImage}>
+    <ParallaxContainer ref={ref}>
       <ParallaxBoxTwo
         as={motion.div}
         style={{ y: y5, x: 0 }}
