@@ -2,19 +2,19 @@ import React from 'react'
 import ContactIcons from './ContactIcons'
 import { NavHashLink } from 'react-router-hash-link'
 import { NavContainer, NavList, ListItem } from '../styles/nav'
-import { ReactComponent as Parrots } from '../assets/parrots.svg'
-import SvgIcon from '../components/SvgIcon'
+// import { ReactComponent as Parrots } from '../assets/parrots.svg'
+// import SvgIcon from '../components/SvgIcon'
+// <SvgIcon
+//   Icon={Parrots}
+//   width={2.75}
+//   height={2.55}
+//   fillColor='#fae1dd'
+// />
 
 const Nav = () => {
   return (
     <NavContainer>
       <NavList>
-        <SvgIcon
-          Icon={Parrots}
-          width={2.75}
-          height={2.55}
-          fillColor='#fae1dd'
-        />
         <ListItem>
           {' '}
           <NavHashLink

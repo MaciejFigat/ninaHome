@@ -18,7 +18,9 @@ export const PictureListWrapper = styled(motion.ul)`
 export const ListWrapper = styled(motion.ul)`
   display: flex;
   flex-direction: column;
-  background-color: var(--background2-main);
+  /* background-color: var(--background2-main); */
+  /* background-color: var(--background-blue2); */
+  background-color: var(--background-tertiary5);
   padding: 20px;
   color: var(--text-main);
   width: 400px;
@@ -67,7 +69,7 @@ export const ListPicture = styled.img`
   /* padding-bottom: 1rem; */
   border-radius: 25px;
   @media (max-width: 740px) {
-    object-fit: contain;
+    /* object-fit: contain; */
     width: 100%;
     max-height: 30vh;
     box-shadow: none;
@@ -84,7 +86,9 @@ export const ListItem = styled(motion.li)`
   padding: 20px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: var(--background1-main);
+  /* background-color: var(--background1-main); */
+  background-color: var(--background-tertiary1);
+  /* background-color: var(--background-blue2); */
   cursor: pointer;
   &:last-child {
     margin-bottom: 0px;
@@ -109,7 +113,8 @@ export const ListRow = styled(motion.div)`
   padding: 0.75rem;
   font-weight: 600;
   min-height: fit-content;
-  background-color: var(--background2-main);
+  background-color: var(--background1-main);
+  /* background-color: var(--background-tertiary1); */
   border-radius: 10px;
   margin-top: 12px;
 `

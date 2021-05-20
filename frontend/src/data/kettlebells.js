@@ -36,4 +36,30 @@ const kettleData2 = [
   },
 ]
 
-export { kettleData2 }
+const kettleData3 = [
+  {
+    id: 1,
+    title: '',
+    xPosition: -250,
+    color: 'brown',
+    yPosition: 1,
+  },
+
+  {
+    id: 3,
+
+    xPosition: 210,
+    color: 'darkgreen',
+    yPosition: 2,
+  },
+
+  {
+    id: 7,
+
+    xPosition: 510,
+    color: 'pink',
+    yPosition: 2,
+  },
+]
+
+export { kettleData2, kettleData3 }

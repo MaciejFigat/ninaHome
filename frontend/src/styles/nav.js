@@ -6,10 +6,10 @@ export const NavContainer = styled.nav`
   position: sticky;
   top: 0;
   height: fit-content;
-  /* padding: 0rem 0 1.5rem; */
   max-width: 100%;
-  background: var(--background2-main);
-  /* padding-bottom: 1rem; */
+  /* background: var(--background2-main); */
+  background: var(--background-tertiary5);
+  box-shadow: 2px 1px 5px 0px var(--background1-main);
   z-index: 22;
 `
 export const NavList = styled.ul`
@@ -21,8 +21,7 @@ export const NavList = styled.ul`
 `
 export const ListItem = styled.li`
   margin-right: 1rem;
-  font-size: 1.5rem;
-  /* font-family: 'Roboto Slab', serif; */
+  font-size: 1.75rem;
   font-weight: 700;
 
   &:hover {
@@ -32,7 +31,7 @@ export const ListItem = styled.li`
     color: purple;
   }
   @media (max-width: 740px) {
-    font-size: 0.85rem;
+    font-size: 1.1rem;
     margin-right: 0.25rem;
   }
 `
