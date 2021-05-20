@@ -26,6 +26,7 @@ const Home = () => {
         ></ParallaxTextBubble>
         <ParallaxComponent data={offerData} />
       </SectionDiv>
+
       <SectionDiv id='fitness' backgroundImage={parrots2}>
         <ParallaxTextBubble
           title='Przykładowy trening'

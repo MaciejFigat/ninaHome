@@ -30,9 +30,10 @@ export const ListWrapper = styled(motion.ul)`
   /* justify-content: center; */
   height: fit-content;
   @media (max-width: 740px) {
+    padding: 15px;
     margin-top: 10px;
-    max-width: 100vw;
-    width: 320px;
+    max-width: 90vw;
+    /* width: 320px; */
   }
 `
 export const PictureWrapper = styled(motion.div)`
