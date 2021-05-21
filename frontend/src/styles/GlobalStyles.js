@@ -11,6 +11,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    max-width: 100vw;
     height: 100%;
     background-color: var(--background4-main);  
     font-family: 'Quicksand', sans-serif; 

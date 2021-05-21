@@ -39,6 +39,7 @@ const ParalaxTextBubble = ({ title, kettleData }) => {
     <ParallaxContainer ref={ref}>
       <ParallaxBoxTwo
         as={motion.div}
+        layout
         style={{ y: y5, x: 0 }}
         borderColor={kettleData[1].color}
       >
@@ -90,34 +91,3 @@ const ParalaxTextBubble = ({ title, kettleData }) => {
 }
 
 export default ParalaxTextBubble
-
-//       <ParallaxBoxTwo
-//         as={motion.div}
-//         style={{ y: y1, x: -100, background: 'brown' }}
-//       >
-//         <h1>{title}</h1>
-//       </ParallaxBoxTwo>
-//       <ParallaxBox
-//         as={motion.div}
-//         style={{ y: y2, x: 100 }}
-//         borderColor='pink'
-//       ></ParallaxBox>
-
-//       <ParallaxBox
-//         as={motion.div}
-//         style={{ y: y4, x: -150 }}
-//         borderColor='green'
-//       ></ParallaxBox>
-//       <ParallaxBox
-//         as={motion.div}
-//         style={{ y: y2, x: 350 }}
-//         borderColor='darkblue'
-//       ></ParallaxBox>
-
-//       <ParallaxBoxThree
-//         as={motion.div}
-//         style={{ y: y3, x: 0 }}
-//         borderColor='silver'
-//       >
-//         HELL
-//       </ParallaxBoxThree>

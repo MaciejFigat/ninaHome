@@ -39,7 +39,6 @@ export const ListWrapper = styled(motion.ul)`
 export const PictureWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
-
   /* background-color: var(--background2-main); */
   /* padding: 20px; */
   color: var(--text-main);
@@ -55,7 +54,6 @@ export const PictureWrapper = styled(motion.div)`
     padding: 0px;
     width: 100%;
   }
-
   /* max-width: 88vw; */
   border-radius: 25px;
   /* max-width: fit-content; */
@@ -148,7 +146,6 @@ export const Container = styled.div`
 export const SvgContainer = styled.div`
   height: 'auto';
   width: 'auto';
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -156,7 +153,6 @@ export const SvgContainer = styled.div`
     max-height: 3.5rem;
     max-width: 3.5rem;
   }
-
   & svg {
     fill: ${(props) => (props.fillColor ? `${props.fillColor}` : 'yellow')};
     height: ${(props) => (props.height ? `${props.height}rem` : '100%')};
