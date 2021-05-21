@@ -11,17 +11,17 @@ import { ReactComponent as Parrots } from '../../assets/parrots.svg'
 
 const ParalaxComponent = ({ data }) => {
   const [ref, inView] = useInView({
-    threshold: 0.2,
+    threshold: 0.1,
     triggerOnce: true,
-    trackVisibility: true,
-    delay: 300,
+    // trackVisibility: true,
+    // delay: 100,
   })
   const variants = {
     visible: { opacity: 1, scale: 1, y: 0 },
     hidden: {
       opacity: 0,
-      scale: 0.85,
-      y: 60,
+      // scale: 0.85,
+      y: 10,
     },
   }
   return (
@@ -30,7 +30,7 @@ const ParalaxComponent = ({ data }) => {
         as={motion.div}
         animate={inView ? 'visible' : 'hidden'}
         variants={variants}
-        transition={{ duration: 1.2, ease: 'easeOut' }}
+        transition={{ duration: 0.4, ease: 'easeOut' }}
         ref={ref}
       >
         {' '}
