@@ -10,7 +10,7 @@ export const PictureListWrapper = styled(motion.ul)`
   justify-content: space-around;
   @media (max-width: 740px) {
     height: fit-content;
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 0;
   }
 `
@@ -110,13 +110,20 @@ export const ListRow = styled(motion.div)`
   text-align: left;
   width: 93%;
   /* height: 20px; */
-  padding: 0.75rem;
+  padding: 1rem;
+  line-height: 1.3;
+  font-size: 1.2rem;
   font-weight: 600;
   min-height: fit-content;
   background-color: var(--background1-main);
   /* background-color: var(--background-tertiary1); */
   border-radius: 10px;
   margin-top: 12px;
+  @media (max-width: 740px) {
+    padding: 0.75rem;
+    line-height: 1;
+    font-size: 0.9rem;
+  }
 `
 
 export const ListTitleContainer = styled(motion.div)`
