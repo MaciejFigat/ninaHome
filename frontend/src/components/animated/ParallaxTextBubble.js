@@ -36,7 +36,7 @@ const ParalaxTextBubble = ({ title, kettleData }) => {
   )
 
   return (
-    <ParallaxContainer ref={ref}>
+    <ParallaxContainer as={motion.div} layout ref={ref}>
       <ParallaxBoxTwo
         as={motion.div}
         layout

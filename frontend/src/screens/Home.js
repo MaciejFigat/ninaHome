@@ -14,10 +14,11 @@ import parrots2 from '../assets/parrots2.svg'
 // import HomePanel from '../components/HomePanel'
 import ParallaxComponent from '../components/animated/ParallaxComponent'
 import ParallaxTextBubble from '../components/animated/ParallaxTextBubble'
+import { AnimateSharedLayout } from 'framer-motion'
 
 const Home = () => {
   return (
-    <>
+    <AnimateSharedLayout>
       <SectionDiv id='home' backgroundImage={parrots2}>
         {' '}
         <ParallaxTextBubble
@@ -56,7 +57,7 @@ const Home = () => {
         {' '}
         <ParallaxTextBubble title='The end' kettleData={kettleData2} />
       </SectionDiv>
-    </>
+    </AnimateSharedLayout>
   )
 }
 

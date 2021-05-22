@@ -107,6 +107,7 @@ export const ListImage = styled.img`
 `
 
 export const ListRow = styled(motion.div)`
+  text-align: left;
   width: 93%;
   /* height: 20px; */
   padding: 0.75rem;
