@@ -11,7 +11,7 @@ import {
   ParallaxBoxTwo,
   ParallaxBoxThree,
 } from '../../styles/parallaxCompStyled'
-import ParallaxComponentTwo from './ParallaxComponentTwo'
+// import ParallaxComponentTwo from './ParallaxComponentTwo'
 import ParallaxComponent from './ParallaxComponent'
 
 const ParalaxTextBubble = ({ title, kettleData, data }) => {
@@ -75,6 +75,13 @@ const ParalaxTextBubble = ({ title, kettleData, data }) => {
             )}
             {!example.title && example.yPosition === 1 && (
               <ParallaxBox
+                drag
+                dragConstraints={{
+                  top: -15,
+                  left: -15,
+                  right: 15,
+                  bottom: 15,
+                }}
                 as={motion.div}
                 layout
                 style={{ y: y1, x: example.xPosition }}
@@ -83,6 +90,13 @@ const ParalaxTextBubble = ({ title, kettleData, data }) => {
             )}
             {!example.title && example.yPosition === 2 && (
               <ParallaxBox
+                drag
+                dragConstraints={{
+                  top: -10,
+                  left: -10,
+                  right: 10,
+                  bottom: 10,
+                }}
                 as={motion.div}
                 layout
                 style={{ y: y2, x: example.xPosition }}
@@ -91,6 +105,13 @@ const ParalaxTextBubble = ({ title, kettleData, data }) => {
             )}
             {!example.title && example.yPosition === 3 && (
               <ParallaxBox
+                drag
+                dragConstraints={{
+                  top: -30,
+                  left: -30,
+                  right: 30,
+                  bottom: 30,
+                }}
                 as={motion.div}
                 layout
                 style={{ y: y3, x: example.xPosition }}
@@ -99,6 +120,13 @@ const ParalaxTextBubble = ({ title, kettleData, data }) => {
             )}
             {!example.title && example.yPosition === 4 && (
               <ParallaxBox
+                drag
+                dragConstraints={{
+                  top: -20,
+                  left: -20,
+                  right: 20,
+                  bottom: 20,
+                }}
                 as={motion.div}
                 layout
                 style={{ y: y4, x: example.xPosition }}
