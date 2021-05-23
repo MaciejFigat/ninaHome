@@ -12,7 +12,7 @@ import { ReactComponent as Parrots } from '../../assets/parrots.svg'
 const ParalaxComponentClick = ({ data }) => {
   return (
     <ParallaxContainer>
-      <ParallaxBoxTwoContent as={motion.div} layout>
+      <ParallaxBoxTwoContent as={motion.div}>
         {' '}
         <AnimatedPanel data={data} Icon={Parrots} />
       </ParallaxBoxTwoContent>

@@ -9,6 +9,7 @@ import { SectionDiv } from '../styles/sectionStyled'
 import kettleParrot from '../assets/kettleParrot.svg'
 import parrots2 from '../assets/parrots2.svg'
 import ParallaxTextBubble from '../components/animated/ParallaxTextBubble'
+import ContactIcons from '../components/ContactIcons'
 import { AnimateSharedLayout } from 'framer-motion'
 
 const Home = () => {
@@ -50,7 +51,7 @@ const Home = () => {
 
       <SectionDiv id='ending' backgroundImage={kettleParrot}>
         {' '}
-        <ParallaxTextBubble title='The end' kettleData={kettleData2} />
+        <ParallaxTextBubble title={<ContactIcons />} kettleData={kettleData2} />
       </SectionDiv>
     </AnimateSharedLayout>
   )
