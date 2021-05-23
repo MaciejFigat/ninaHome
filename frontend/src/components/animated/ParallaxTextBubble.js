@@ -12,7 +12,7 @@ import {
   ParallaxBoxThree,
 } from '../../styles/parallaxCompStyled'
 // import ParallaxComponentTwo from './ParallaxComponentTwo'
-import ParallaxComponent from './ParallaxComponent'
+import ParallaxComponentClick from './ParallaxComponentClick'
 
 const ParalaxTextBubble = ({ title, kettleData, data }) => {
   const { scrollY } = useViewportScroll()
@@ -60,7 +60,7 @@ const ParalaxTextBubble = ({ title, kettleData, data }) => {
         >
           <h1>{title}</h1>
         </ParallaxBoxTwo>
-        {showText === true && data && <ParallaxComponent data={data} />}
+        {showText === true && data && <ParallaxComponentClick data={data} />}
         {kettleData.map((example) => (
           <div key={example.id}>
             {example.title && (
@@ -69,6 +69,13 @@ const ParalaxTextBubble = ({ title, kettleData, data }) => {
                 layout
                 style={{ y: y3, x: example.xPosition }}
                 borderColor={example.color}
+                drag
+                dragConstraints={{
+                  top: 15,
+                  left: 15,
+                  right: 15,
+                  bottom: 15,
+                }}
               >
                 <h4>{example.title}</h4>
               </ParallaxBoxThree>

@@ -11,7 +11,7 @@ import Item from './Item'
 import Content from './Content'
 
 const AnimatedPanel = ({ data, Icon }) => {
-  const [panelNumber, setPanelNumber] = useState(0)
+  const [panelNumber, setPanelNumber] = useState(null)
 
   return (
     <PictureListWrapper>
@@ -19,17 +19,19 @@ const AnimatedPanel = ({ data, Icon }) => {
         <PictureWrapper
           as={motion.div}
           layout
-          initial={{ opacity: 1 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0.5 }}
+          // initial={{ opacity: 1 }}
+          // animate={{ opacity: 1 }}
+          // exit={{ opacity: 0.5 }}
         >
-          <ImageAnimated
-            src={data[panelNumber].picture}
-            id={data[panelNumber].id}
-            width='50vw'
-            height='60vh'
-          />
-          {data[panelNumber].description2 && (
+          {panelNumber !== null && (
+            <ImageAnimated
+              src={data[panelNumber].picture}
+              id={data[panelNumber].id}
+              width='50vw'
+              height='60vh'
+            />
+          )}
+          {panelNumber !== null && data[panelNumber].description2 && (
             <>
               {' '}
               <AnimatePresence exitBeforeEnter>
