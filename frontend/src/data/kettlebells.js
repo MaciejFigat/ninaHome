@@ -31,7 +31,7 @@ const kettleData2 = [
     id: 5,
     title: 'mam!',
     xPosition: 210,
-    color: 'darkblue',
+    color: 'rebeccapurple',
     yPosition: 2,
   },
 ]
