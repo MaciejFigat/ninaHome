@@ -1,9 +1,11 @@
-import mirror from '../assets/mirror.jpg'
+import childPose from '../assets/gym/childPose.jpg'
+import barbellBack from '../assets/gym/barbellBack.jpg'
+import twoFrogs from '../assets/gym/twoFrogs.jpg'
 
 const plansData = [
   {
     id: 1,
-    picture: mirror,
+    picture: childPose,
     title: 'Rozgrzewka',
     description:
       'Najpierw wykonujesz rozgrzewkę która pobudza Twój układ krążeniowo oddechowy.',
@@ -13,7 +15,7 @@ const plansData = [
   },
   {
     id: 2,
-    picture: mirror,
+    picture: barbellBack,
     title: 'Część główna',
     description:
       'W części głównej umieszczam ćwiczenia na najważniejsze grupy mięśniowe.',
@@ -23,7 +25,7 @@ const plansData = [
   },
   {
     id: 3,
-    picture: mirror,
+    picture: twoFrogs,
     title: 'Relaks',
     description:
       'Na koniec aby uspokoić Twój układ nerwowy wykonujesz ćwiczenia oddechowe połączone z pozycjami relaksującymi.',

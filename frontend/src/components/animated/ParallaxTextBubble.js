@@ -11,10 +11,17 @@ import {
   ParallaxBoxTwo,
   ParallaxBoxThree,
 } from '../../styles/parallaxCompStyled'
-// import ParallaxComponentTwo from './ParallaxComponentTwo'
+import ImageAnimated from './ImageAnimated'
+// import { ListPicture } from '../../styles/homePanel.js'
 import ParallaxComponentClick from './ParallaxComponentClick'
 
-const ParalaxTextBubble = ({ title, kettleData, data }) => {
+const ParalaxTextBubble = ({
+  title,
+  kettleData,
+  data,
+  firstPicture,
+  pictureId,
+}) => {
   const { scrollY } = useViewportScroll()
   const ref = useRef()
   const [offsetTop, setOffsetTop] = useState(0)
@@ -60,6 +67,15 @@ const ParalaxTextBubble = ({ title, kettleData, data }) => {
         >
           <h1>{title}</h1>
         </ParallaxBoxTwo>
+        {firstPicture && showText === false && (
+          <ImageAnimated
+            as={motion.div}
+            src={firstPicture}
+            width='40vw'
+            height='55vh'
+            id={pictureId}
+          />
+        )}
         {showText === true && data && <ParallaxComponentClick data={data} />}
         {kettleData.map((example) => (
           <div key={example.id}>

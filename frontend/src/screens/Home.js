@@ -4,13 +4,16 @@ import { fitnessData } from '../data/fitness'
 import { plansData } from '../data/plans'
 import { offerData } from '../data/offer'
 import { kettleData } from '../data/bubbles'
+import { motivationData } from '../data/motivation'
 import { kettleData2, kettleData3 } from '../data/kettlebells'
 import { SectionDiv } from '../styles/sectionStyled'
-import kettleParrot from '../assets/kettleParrot.svg'
 import parrots2 from '../assets/parrots2.svg'
+import frogBack from '../assets/gym/frogBack.jpg'
 import ParallaxTextBubble from '../components/animated/ParallaxTextBubble'
 import ContactIcons from '../components/ContactIcons'
 import { AnimateSharedLayout } from 'framer-motion'
+// import ImageAnimated from '../components/animated/ImageAnimated'
+// <ImageAnimated src={frogBack} width='30vw' height='35vh' position />
 
 const Home = () => {
   return (
@@ -18,9 +21,11 @@ const Home = () => {
       <SectionDiv id='home' backgroundImage={parrots2}>
         {' '}
         <ParallaxTextBubble
-          title='Trening medyczny'
+          firstPicture={frogBack}
+          pictureID='frog3'
+          title='Motywacja do treningu'
           kettleData={kettleData3}
-          data={offerData}
+          data={motivationData}
         ></ParallaxTextBubble>
       </SectionDiv>
 
@@ -44,12 +49,13 @@ const Home = () => {
       <SectionDiv id='training' backgroundImage={parrots2}>
         {' '}
         <ParallaxTextBubble
-          title={offerData[0].title}
+          title='Trening medyczny'
           kettleData={kettleData}
+          data={offerData}
         />
       </SectionDiv>
 
-      <SectionDiv id='ending' backgroundImage={kettleParrot}>
+      <SectionDiv id='ending' backgroundImage={parrots2}>
         {' '}
         <ParallaxTextBubble title={<ContactIcons />} kettleData={kettleData2} />
       </SectionDiv>
