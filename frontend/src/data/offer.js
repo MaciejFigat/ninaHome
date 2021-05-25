@@ -1,9 +1,10 @@
 import mirror from '../assets/mirror.jpg'
-
+import frogBack from '../assets/gym/frogBack.jpg'
 const offerData = [
   {
     id: 1,
     picture: mirror,
+    picture2: frogBack,
     title: 'Profilaktyka',
     description:
       'Trenując podopiecznych zwracam uwagę na aspekty prozdrowotne i profilaktyczne wysiłku fizycznego. ',

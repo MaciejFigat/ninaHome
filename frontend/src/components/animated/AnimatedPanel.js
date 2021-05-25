@@ -10,7 +10,7 @@ import ImageAnimated from './ImageAnimated'
 import Item from './Item'
 import Content from './Content'
 
-const AnimatedPanel = ({ data, Icon, firstPicture }) => {
+const AnimatedPanel = ({ data, Icon }) => {
   const [panelNumber, setPanelNumber] = useState(null)
 
   return (
@@ -23,9 +23,9 @@ const AnimatedPanel = ({ data, Icon, firstPicture }) => {
           // animate={{ opacity: 1 }}
           // exit={{ opacity: 0.5 }}
         >
-          {panelNumber === null && (
+          {panelNumber === null && data[0].picture2 && (
             <ImageAnimated
-              src={firstPicture}
+              src={data[0].picture2}
               width='50vw'
               height='60vh'
               id='2'

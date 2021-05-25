@@ -1,11 +1,12 @@
 import childPose from '../assets/gym/childPose.jpg'
 import barbellBack from '../assets/gym/barbellBack.jpg'
 import twoFrogs from '../assets/gym/twoFrogs.jpg'
-
+import frogBack from '../assets/gym/frogBack.jpg'
 const plansData = [
   {
     id: 1,
     picture: childPose,
+    picture2: frogBack,
     title: 'Rozgrzewka',
     description:
       'Najpierw wykonujesz rozgrzewkę która pobudza Twój układ krążeniowo oddechowy.',

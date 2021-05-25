@@ -1,11 +1,12 @@
 import pickles from '../assets/gym/pickles.jpg'
 import stretching from '../assets/gym/stretching.jpg'
 import blackboard from '../assets/gym/blackboard.jpg'
-
+import frogFront from '../assets/gym/frogFront.jpg'
 const motivationData = [
   {
     id: 1,
     picture: blackboard,
+    picture2: frogFront,
     title: 'Poprawa sylwetki',
     description:
       'Może masz chęć poprawić sylwetkę. Chesz czuć się silnym, lecz nie wiesz nic o periodyzacji, ćwiczeniach i najnowszych metodach treningowych.',

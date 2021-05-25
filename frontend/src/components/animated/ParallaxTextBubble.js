@@ -13,7 +13,7 @@ import {
 } from '../../styles/parallaxCompStyled'
 import ParallaxComponentClick from './ParallaxComponentClick'
 
-const ParalaxTextBubble = ({ title, kettleData, data, firstPicture }) => {
+const ParalaxTextBubble = ({ title, kettleData, data }) => {
   const { scrollY } = useViewportScroll()
   const ref = useRef()
   const [offsetTop, setOffsetTop] = useState(0)
@@ -59,9 +59,7 @@ const ParalaxTextBubble = ({ title, kettleData, data, firstPicture }) => {
           <h1>{title}</h1>
         </ParallaxBoxTwo>
 
-        {showText === true && data && (
-          <ParallaxComponentClick data={data} firstPicture={firstPicture} />
-        )}
+        {showText === true && data && <ParallaxComponentClick data={data} />}
         {kettleData.map((example) => (
           <div key={example.id}>
             {example.title && (

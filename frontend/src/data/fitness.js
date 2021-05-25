@@ -1,11 +1,12 @@
 import nina1 from '../assets/nina1.jpg'
 import nina2 from '../assets/nina2.jpg'
 import mirror from '../assets/mirror.jpg'
-
+import frogBack from '../assets/gym/frogBack.jpg'
 const fitnessData = [
   {
     id: 1,
     picture: nina1,
+    picture2: frogBack,
     title: 'Trening funkcjonalny',
     description:
       'Moje podejście do klienta charakteryzuje indywidualizm i odpowiednie dostosowywanie bodźców treningowych.',
