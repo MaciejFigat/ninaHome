@@ -11,17 +11,9 @@ import {
   ParallaxBoxTwo,
   ParallaxBoxThree,
 } from '../../styles/parallaxCompStyled'
-import ImageAnimated from './ImageAnimated'
-// import { ListPicture } from '../../styles/homePanel.js'
 import ParallaxComponentClick from './ParallaxComponentClick'
 
-const ParalaxTextBubble = ({
-  title,
-  kettleData,
-  data,
-  firstPicture,
-  pictureId,
-}) => {
+const ParalaxTextBubble = ({ title, kettleData, data, firstPicture }) => {
   const { scrollY } = useViewportScroll()
   const ref = useRef()
   const [offsetTop, setOffsetTop] = useState(0)
@@ -49,7 +41,6 @@ const ParalaxTextBubble = ({
     [offsetTop - 350, offsetTop + 50],
     [-100, 100]
   )
-  // <ParallaxComponentTwo description='So schreitet in dem engen Bretterhaus (Theater, Bühne) Den ganzen Kreis der Schöpfung aus, Und wandelt mit bedächtger Schnelle Vom Himmel durch die Welt zur Hölle!' />
 
   return (
     <AnimateSharedLayout>
@@ -67,16 +58,10 @@ const ParalaxTextBubble = ({
         >
           <h1>{title}</h1>
         </ParallaxBoxTwo>
-        {firstPicture && showText === false && (
-          <ImageAnimated
-            as={motion.div}
-            src={firstPicture}
-            width='40vw'
-            height='55vh'
-            id={pictureId}
-          />
+
+        {showText === true && data && (
+          <ParallaxComponentClick data={data} firstPicture={firstPicture} />
         )}
-        {showText === true && data && <ParallaxComponentClick data={data} />}
         {kettleData.map((example) => (
           <div key={example.id}>
             {example.title && (

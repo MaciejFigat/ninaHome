@@ -9,6 +9,7 @@ import { kettleData2, kettleData3 } from '../data/kettlebells'
 import { SectionDiv } from '../styles/sectionStyled'
 import parrots2 from '../assets/parrots2.svg'
 import frogBack from '../assets/gym/frogBack.jpg'
+import frogFront from '../assets/gym/frogFront.jpg'
 import ParallaxTextBubble from '../components/animated/ParallaxTextBubble'
 import ContactIcons from '../components/ContactIcons'
 import { AnimateSharedLayout } from 'framer-motion'
@@ -31,6 +32,7 @@ const Home = () => {
 
       <SectionDiv id='fitness' backgroundImage={parrots2}>
         <ParallaxTextBubble
+          firstPicture={frogBack}
           title='Przykładowy trening'
           kettleData={kettleData}
           data={plansData}
@@ -40,6 +42,7 @@ const Home = () => {
       <SectionDiv id='plans' backgroundImage={parrots2}>
         {' '}
         <ParallaxTextBubble
+          firstPicture={frogFront}
           title={fitnessData[0].title}
           kettleData={kettleData3}
           data={fitnessData}
@@ -49,6 +52,7 @@ const Home = () => {
       <SectionDiv id='training' backgroundImage={parrots2}>
         {' '}
         <ParallaxTextBubble
+          firstPicture={frogBack}
           title='Trening medyczny'
           kettleData={kettleData}
           data={offerData}

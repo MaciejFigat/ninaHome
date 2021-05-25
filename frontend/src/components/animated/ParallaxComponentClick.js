@@ -9,12 +9,12 @@ import AnimatedPanel from './AnimatedPanel'
 
 import { ReactComponent as Parrots } from '../../assets/parrots.svg'
 
-const ParalaxComponentClick = ({ data }) => {
+const ParalaxComponentClick = ({ data, firstPicture }) => {
   return (
     <ParallaxContainer>
       <ParallaxBoxTwoContent as={motion.div}>
         {' '}
-        <AnimatedPanel data={data} Icon={Parrots} />
+        <AnimatedPanel data={data} Icon={Parrots} firstPicture={firstPicture} />
       </ParallaxBoxTwoContent>
     </ParallaxContainer>
   )
