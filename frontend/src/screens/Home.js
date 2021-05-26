@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { fitnessData } from '../data/fitness'
 import { plansData } from '../data/plans'
 import { offerData } from '../data/offer'

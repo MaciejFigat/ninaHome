@@ -13,7 +13,6 @@ export const IconsWrapper = styled.ul`
 `
 export const IconsItem = styled.li`
   margin-right: 1rem;
-  /* margin-left: 1.25rem; */
   @media (max-width: 740px) {
     margin-right: 0.5rem;
   }

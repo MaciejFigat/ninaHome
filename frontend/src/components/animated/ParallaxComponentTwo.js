@@ -21,11 +21,8 @@ const ParalaxComponentTwo = ({ description }) => {
     <ParallaxContainer>
       <ParallaxBoxTwoContent
         as={motion.div}
-        // animate={inView ? 'visible' : 'hidden'}
-        // animate={in={x: '-10vw'}}
         variants={variants}
         transition={{ duration: 1.4, ease: 'easeOut' }}
-        // ref={ref}
       >
         <AnimatePresence>
           <Content key={123123} description={description} />

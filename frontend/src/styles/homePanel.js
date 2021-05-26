@@ -33,19 +33,13 @@ export const ListWrapper = styled(motion.ul)`
     padding: 15px;
     margin-top: 10px;
     max-width: 90vw;
-    /* width: 320px; */
   }
 `
 export const PictureWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  /* background-color: var(--background2-main); */
-  /* padding: 20px; */
   color: var(--text-main);
   width: 600px;
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* margin-left: 20px; */
   margin-right: 20px;
   @media (max-width: 740px) {
     margin-top: 10px;
@@ -54,9 +48,7 @@ export const PictureWrapper = styled(motion.div)`
     padding: 0px;
     width: 100%;
   }
-  /* max-width: 88vw; */
   border-radius: 25px;
-  /* max-width: fit-content; */
 `
 
 export const ListPicture = styled.img`
@@ -64,11 +56,8 @@ export const ListPicture = styled.img`
   height: ${(props) => (props.height ? props.height : '20vh')};
   object-fit: cover;
   box-shadow: 3px 6px 5px 0px var(--background1-main);
-  /* object-fit: contain; */
-  /* padding-bottom: 1rem; */
   border-radius: 25px;
   @media (max-width: 740px) {
-    /* object-fit: contain; */
     width: 100%;
     max-height: 30vh;
     box-shadow: none;
@@ -109,7 +98,6 @@ export const ListImage = styled.img`
 export const ListRow = styled(motion.div)`
   text-align: left;
   width: 93%;
-  /* height: 20px; */
   padding: 1rem;
   line-height: 1.3;
   font-size: 1.2rem;

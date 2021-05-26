@@ -16,13 +16,7 @@ const AnimatedPanel = ({ data, Icon }) => {
   return (
     <PictureListWrapper>
       <AnimateSharedLayout>
-        <PictureWrapper
-          as={motion.div}
-          layout
-          // initial={{ opacity: 1 }}
-          // animate={{ opacity: 1 }}
-          // exit={{ opacity: 0.5 }}
-        >
+        <PictureWrapper as={motion.div} layout>
           {panelNumber === null && data[0].picture2 && (
             <ImageAnimated
               src={data[0].picture2}
