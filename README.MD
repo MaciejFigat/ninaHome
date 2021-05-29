@@ -1,3 +1,10 @@
+## Technologies
+1. React 
+2. framer-motion for animations
+3. styled-components - for styling
+4. emailjs-com - for email intermediary
+
+
 
 ## Installation
 1. cd frontend
