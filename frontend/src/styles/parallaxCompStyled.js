@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const ParallaxContainer = styled.div`
   text-align: center;
-  min-height: fit-content;
+  /* min-height: 140vh; */
+  /* min-height: fit-content; */
   /* height: 200vh; */
   /* background-color: var(--background4-main); */
   /* background-image: url(${(props) =>
@@ -10,10 +11,21 @@ export const ParallaxContainer = styled.div`
   background-size: cover;
   background-position: top;
   color: var(--text3-main);
-  padding-top: 110px;
   padding-bottom: 110px;
-  overflow: hidden;
-  overflow-y: hidden;
+  /* overflow: hidden;
+  overflow-y: hidden; */
+
+  @media (max-width: 1190px) {
+    padding-top: 110px;
+    overflow: hidden;
+    overflow-x: hidden;
+    padding-bottom: 0px;
+    min-height: 140vh;
+  }
+  @media (max-width: 740px) {
+    padding-top: 110px;
+    padding-bottom: 0px;
+  }
 `
 export const ParallaxBox = styled.div`
   display: grid;
@@ -55,6 +67,11 @@ export const ParallaxBoxTwo = styled.div`
   margin-right: auto;
   font-size: 1rem;
   box-shadow: 3px 6px 5px 0px var(--background1-main);
+  @media (max-width: 740px) {
+    font-size: 0.75rem;
+    padding: 15px;
+    margin-bottom: 60px;
+  }
 `
 export const ParallaxBoxTwoContent = styled.div`
   width: 100%;

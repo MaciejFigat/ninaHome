@@ -20,13 +20,13 @@ const Item = ({ picture, title, description, svgColor, Icon }) => {
       as={motion.li}
       layout
       onClick={toggleOpen}
-      initial={{ borderRadius: 10 }}
+      initial={{ borderRadius: 15 }}
     >
       <ListTitleContainer as={motion.div}>
+        <Container as={motion.div} layout>
+          <SvgIcon Icon={Icon} fillColor={svgColor} />{' '}
+        </Container>
         <ListTitle as={motion.h2} layout>
-          <Container width={6} height={4}>
-            <SvgIcon Icon={Icon} width={5.5} height={5} fillColor={svgColor} />{' '}
-          </Container>
           {title}
         </ListTitle>
       </ListTitleContainer>
@@ -39,3 +39,5 @@ const Item = ({ picture, title, description, svgColor, Icon }) => {
   )
 }
 export default Item
+// <Container as={motion.div} layout width={6} height={4}>
+// <SvgIcon Icon={Icon} width={5.5} height={5} fillColor={svgColor} />{' '}

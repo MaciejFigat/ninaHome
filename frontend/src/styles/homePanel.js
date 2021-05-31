@@ -6,12 +6,13 @@ export const PictureListWrapper = styled(motion.ul)`
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
   justify-content: space-around;
   @media (max-width: 740px) {
     height: fit-content;
+    align-items: center;
     flex-direction: column-reverse;
     padding: 0;
+    margin-top: 0.5rem;
   }
 `
 
@@ -83,6 +84,7 @@ export const ListItem = styled(motion.li)`
   }
   @media (max-width: 740px) {
     padding: 15px;
+    /* padding: 5px 15px 15px; */
   }
 `
 export const ListImage = styled.img`
@@ -90,8 +92,8 @@ export const ListImage = styled.img`
   height: ${(props) => (props.height ? props.height : '50%')};
   object-fit: cover;
   fill: var(--color1-secondary) !important;
-  svg {
-  }
+  /* svg {
+  } */
   margin-right: 1rem;
   @media (max-width: 740px) {
     margin-right: 0.5rem;
@@ -112,23 +114,26 @@ export const ListRow = styled(motion.div)`
   margin-top: 12px;
   @media (max-width: 740px) {
     padding: 0.75rem;
-    line-height: 0.8;
+
     font-size: 0.75rem;
   }
 `
 
 export const ListTitleContainer = styled(motion.div)`
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: left; */
+
+  display: grid;
+  grid-template: auto 1fr / auto 2fr;
+
   @media (max-width: 740px) {
     max-height: 2.5rem;
   }
 `
 export const ListTitle = styled(motion.h2)`
-  display: flex;
-  align-items: center;
-  justify-content: left;
+  display: grid;
+  place-items: center;
   margin: 0;
   margin-left: 0.5rem;
   font-size: 1.5rem;
@@ -145,20 +150,25 @@ export const Container = styled.div`
 export const SvgContainer = styled.div`
   height: 'auto';
   width: 'auto';
-  display: inline-flex;
+  display: grid;
+  place-items: center;
+  /* display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  max-height: 5.5rem;
+  max-width: 5.5rem;
   @media (max-width: 740px) {
-    max-height: 2.5rem;
-    max-width: 2.5rem;
+    max-height: 3rem;
+    max-width: 3rem;
   }
   & svg {
     fill: ${(props) => (props.fillColor ? `${props.fillColor}` : 'yellow')};
     height: ${(props) => (props.height ? `${props.height}rem` : '100%')};
     width: ${(props) => (props.width ? `${props.width}rem` : '100%')};
+
     @media (max-width: 740px) {
-      max-height: 2.5rem;
-      max-width: 2.5rem;
+      max-height: 3.5rem;
+      max-width: 3.5rem;
     }
   }
 `
