@@ -30,7 +30,7 @@ export const ListWrapper = styled(motion.ul)`
   /* justify-content: center; */
   height: fit-content;
   @media (max-width: 740px) {
-    padding: 15px;
+    padding: 10px;
     margin-top: 10px;
     max-width: 90vw;
   }
@@ -81,6 +81,9 @@ export const ListItem = styled(motion.li)`
   &:last-child {
     margin-bottom: 0px;
   }
+  @media (max-width: 740px) {
+    padding: 15px;
+  }
 `
 export const ListImage = styled.img`
   width: ${(props) => (props.width ? props.width : '50%')};
@@ -109,8 +112,8 @@ export const ListRow = styled(motion.div)`
   margin-top: 12px;
   @media (max-width: 740px) {
     padding: 0.75rem;
-    line-height: 1;
-    font-size: 0.9rem;
+    line-height: 0.8;
+    font-size: 0.75rem;
   }
 `
 
@@ -146,16 +149,16 @@ export const SvgContainer = styled.div`
   align-items: center;
   justify-content: center;
   @media (max-width: 740px) {
-    max-height: 3.5rem;
-    max-width: 3.5rem;
+    max-height: 2.5rem;
+    max-width: 2.5rem;
   }
   & svg {
     fill: ${(props) => (props.fillColor ? `${props.fillColor}` : 'yellow')};
     height: ${(props) => (props.height ? `${props.height}rem` : '100%')};
     width: ${(props) => (props.width ? `${props.width}rem` : '100%')};
     @media (max-width: 740px) {
-      max-height: 3.5rem;
-      max-width: 3.5rem;
+      max-height: 2.5rem;
+      max-width: 2.5rem;
     }
   }
 `
