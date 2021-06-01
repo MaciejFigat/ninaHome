@@ -23,16 +23,16 @@ const kettleData2 = [
   {
     id: 4,
     title: 'Trzymaj',
-    xPosition: 120,
+    xPosition: 100,
     color: 'brown',
     yPosition: 2,
   },
   {
     id: 5,
     title: 'się!',
-    xPosition: 210,
+    xPosition: 70,
     color: 'rebeccapurple',
-    yPosition: 2,
+    yPosition: 1,
   },
 ]
 

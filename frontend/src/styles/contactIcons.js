@@ -8,7 +8,7 @@ export const IconsWrapper = styled.ul`
   flex-direction: row;
 
   &:first-child {
-    margin-left: 1.5rem;
+    margin-left: 1.25rem;
   }
 `
 export const IconsItem = styled.li`

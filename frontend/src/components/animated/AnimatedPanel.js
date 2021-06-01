@@ -45,7 +45,13 @@ const AnimatedPanel = ({ data, Icon }) => {
             </>
           )}
         </PictureWrapper>
-        <ListWrapper as={motion.ul} layout initial={{ borderRadius: 25 }}>
+        <ListWrapper
+          as={motion.ul}
+          layout
+          initial={{ borderRadius: 25, opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
           {data.map((item) => (
             <ItemWrapper
               key={item.id}

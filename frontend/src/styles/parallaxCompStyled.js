@@ -1,30 +1,47 @@
 import styled from 'styled-components'
 
+export const ParallaxWrapper = styled.div`
+  /* text-align: center; */
+  /* overflow-y: visible; */
+  /* min-height: 50vh; */
+  /* height: 50vh; */
+  /* width: 100vw; */
+  /* color: var(--text3-main); */
+  /* padding-bottom: 110px; */
+  /* overflow: hidden;
+  overflow-y: hidden; */
+  /* overflow-x: hidden; */
+  /* overflow-y: visible; */
+  @media (max-width: 1190px) {
+  }
+  @media (max-width: 740px) {
+  }
+`
+
 export const ParallaxContainer = styled.div`
   text-align: center;
+
+  /* width: 100vw; */
   /* min-height: 140vh; */
   /* min-height: fit-content; */
-  /* height: 200vh; */
+  /* height: 100vh; */
   /* background-color: var(--background4-main); */
   /* background-image: url(${(props) =>
     props.backgroundImage ? props.backgroundImage : 'none'}); */
-  background-size: cover;
-  background-position: top;
+  /* background-size: cover; */
+  /* background-position: top; */
   color: var(--text3-main);
-  padding-bottom: 110px;
+  padding-top: 110px;
+  /* padding-bottom: 110px; */
   /* overflow: hidden;
   overflow-y: hidden; */
-
   @media (max-width: 1190px) {
-    padding-top: 110px;
-    overflow: hidden;
     overflow-x: hidden;
-    padding-bottom: 0px;
-    min-height: 140vh;
-  }
-  @media (max-width: 740px) {
     padding-top: 110px;
-    padding-bottom: 0px;
+    /* overflow: hidden; */
+    /* overflow-x: hidden; */
+    padding-bottom: 110px;
+    min-height: 50vh;
   }
 `
 export const ParallaxBox = styled.div`
@@ -51,8 +68,12 @@ export const ParallaxBox = styled.div`
     top: -50px;
     border-radius: 35%;
   }
+  /* @media (max-width: 1190px) {
+    display: none;
+  } */
 `
 export const ParallaxBoxTwo = styled.div`
+  /* position: absolute; */
   min-width: min-content;
   min-height: fit-content;
   padding: 20px;
@@ -66,6 +87,7 @@ export const ParallaxBoxTwo = styled.div`
   margin-left: auto;
   margin-right: auto;
   font-size: 1rem;
+  /* margin-bottom: 120px; */
   box-shadow: 3px 6px 5px 0px var(--background1-main);
   @media (max-width: 740px) {
     font-size: 0.75rem;
@@ -113,4 +135,7 @@ export const ParallaxBoxThree = styled.div`
     top: -170px;
     border-radius: 35%;
   }
+  /* @media (max-width: 1190px) {
+    display: none;
+  } */
 `

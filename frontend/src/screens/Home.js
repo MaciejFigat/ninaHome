@@ -17,7 +17,6 @@ const Home = () => {
       <SectionDiv id='home' backgroundImage={parrots2}>
         {' '}
         <ParallaxTextBubble
-          pictureID='frog3'
           title='Motywacja do treningu'
           kettleData={kettleData3}
           data={motivationData}

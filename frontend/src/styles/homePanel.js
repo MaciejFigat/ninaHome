@@ -60,7 +60,7 @@ export const ListPicture = styled.img`
   border-radius: 25px;
   @media (max-width: 740px) {
     width: 100%;
-    max-height: 30vh;
+    max-height: 35vh;
     box-shadow: none;
   }
 `
