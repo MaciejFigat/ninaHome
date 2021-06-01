@@ -20,24 +20,14 @@ export const PictureListWrapper = styled(motion.ul)`
 export const ListWrapper = styled(motion.ul)`
   display: flex;
   flex-direction: column;
-  /* background-color: var(--background2-main); */
-  /* background-color: var(--background-blue2); */
-  /* background-color: var(--background-tertiary5); */
-  /* box-shadow: 3px 6px 5px 0px var(--background1-main); */
-  /* box-shadow: inset 5px 5px 4px #1d366e, inset -5px -5px 4px #59a8ff; */
-
-  /* background: #3b6fe0;
-  box-shadow: 5px 5px 4px #1d366e, -5px -5px 4px #59a8ff; */
-
+  /* background: var(--background4-main); */
   background: linear-gradient(145deg, #3f77f0, #3564ca);
   box-shadow: 5px 5px 4px #1d366e, -5px -5px 4px #59a8ff;
-
   padding: 20px;
   color: var(--text-main);
   width: 400px;
   max-width: 35vw;
   border-radius: 25px;
-  /* justify-content: center; */
   height: fit-content;
   @media (max-width: 740px) {
     padding: 10px;
@@ -65,7 +55,6 @@ export const ListPicture = styled.img`
   width: ${(props) => (props.width ? props.width : '300px')};
   height: ${(props) => (props.height ? props.height : '20vh')};
   object-fit: cover;
-  /* box-shadow: 3px 6px 5px 0px var(--background1-main); */
   box-shadow: 5px 5px 4px #1d366e, -5px -5px 4px #59a8ff;
   border-radius: 25px;
   @media (max-width: 740px) {
@@ -88,31 +77,10 @@ export const ListItem = styled(motion.li)`
   padding: 15px;
   border-radius: 10px;
   overflow: hidden;
-  background: #3b6fe0;
-
   color: var(--text-main);
-  background: #1d3557;
+  /* background: #1d3557; */
+  background: var(--background-tertiary1);
   box-shadow: inset 5px 5px 10px #0c1523, inset -5px -5px 10px #2e558b;
-  /* box-shadow: inset 5px 5px 4px #1d366e, inset -5px -5px 4px #59a8ff; */
-  /* background: #1d3557;
-  box-shadow: inset 5px 5px 10px #122137, inset -5px -5px 10px #284977; */
-  /* background: #e63946;
-  box-shadow: inset 5px 5px 28px #7f1f27, inset -5px -5px 28px #ff5366; */
-  /* background: #3b6fe0;
-  box-shadow: 7px 7px 14px #325ebe, -7px -7px 14px #4480ff; */
-
-  /* background-color: var(--background1-main); */
-
-  /* background-color: var(--background-tertiary1); */
-
-  /* background: #e63946;
-  box-shadow: inset 5px 5px 10px #c4303c, inset -5px -5px 10px #ff4251; */
-  /* background: #1d3557;
-  box-shadow: inset 5px 5px 10px #192d4a, inset -5px -5px 10px #213d64; */
-
-  /* box-shadow: inset 33px 33px 67px #c4303c, inset -33px -33px 67px #ff4251; */
-
-  /* background-color: var(--background-blue2); */
   cursor: pointer;
   &:last-child {
     margin-bottom: 0px;
@@ -126,7 +94,6 @@ export const ListImage = styled.img`
   height: ${(props) => (props.height ? props.height : '50%')};
   object-fit: cover;
   fill: var(--color1-secondary) !important;
-
   margin-right: 1rem;
   @media (max-width: 740px) {
     margin-right: 0.5rem;
@@ -139,22 +106,15 @@ export const ListRow = styled(motion.div)`
   padding: 1rem;
   line-height: 1.1;
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 600;
   min-height: fit-content;
-
   color: var(--background-tertiary1);
-  /* background-color: var(--background1-main); */
-  background: #e63946;
+  background: var(--background-tertiary5);
   box-shadow: inset 6px 6px 12px #6a1a20, inset -6px -6px 12px #ff586c;
-
-  /* background: var(--background1-main);
-  box-shadow: inset 12px 12px 26px #16181d, inset -12px -12px 26px #3a404b; */
-
   border-radius: 10px;
   margin-top: 12px;
   @media (max-width: 740px) {
     padding: 0.75rem;
-
     font-size: 0.75rem;
   }
 `

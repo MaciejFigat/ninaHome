@@ -61,15 +61,10 @@ export const ParallaxBoxTwo = styled.div`
 
   place-items: center;
 
-  background: #3b6fe0;
+  /* background: #3b6fe0; */
+  background: var(--background4-main);
   box-shadow: inset 5px 5px 10px #223f80, inset -5px -5px 10px #549fff;
-  /* background: #3b6fe0;
-  box-shadow: inset 7px 7px 14px #325ebe, inset -7px -7px 14px #4480ff; */
 
-  /* background: #e63946;
-  box-shadow: inset 5px 5px 10px #c4303c, inset -5px -5px 10px #ff4251; */
-  /* background: linear-gradient(145deg, #3564ca, #3f77f0);
-  box-shadow: 20px 20px 60px #325ebe, -20px -20px 60px #4480ff; */
   /* background-color: ${(props) =>
     props.borderColor ? props.borderColor : 'cyan'}; */
   border-radius: 50%;
@@ -77,7 +72,6 @@ export const ParallaxBoxTwo = styled.div`
   margin-right: auto;
   font-size: 0.75rem;
   /* margin-bottom: 120px; */
-  /* box-shadow: 3px 6px 5px 0px var(--background1-main); */
 
   @media (max-width: 740px) {
     width: 100px;
