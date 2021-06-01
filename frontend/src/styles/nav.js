@@ -8,8 +8,10 @@ export const NavContainer = styled.nav`
   height: fit-content;
   max-width: 100%;
   /* background: var(--background2-main); */
-  background: var(--background-tertiary5);
-  box-shadow: 2px 1px 5px 0px var(--background1-main);
+  /* background: var(--background-tertiary5); */
+  background: linear-gradient(145deg, #cf333f, #f63d4b);
+  box-shadow: 5px 5px 10px #2c52a6, -5px -5px 10px #4a8cff;
+  /* box-shadow: 2px 1px 5px 0px var(--background1-main); */
   z-index: 22;
 `
 export const NavList = styled.ul`

@@ -32,6 +32,13 @@ body {
     --border-main4: yellow;
     --border-main5: silver;
     --border-main6: gold;
+    
+    --color-neu1: ;
+    --color-neu2: ;
+    --color-neu3: ;
+    --color-neu4: ;
+
+
 
     --color1-secondary: #236677;
     --color2-secondary: #1bb9ac;

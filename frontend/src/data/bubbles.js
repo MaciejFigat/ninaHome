@@ -20,14 +20,6 @@ const kettleData = [
     color: 'darkgreen',
     yPosition: 2,
   },
-
-  {
-    id: 6,
-
-    xPosition: -10,
-    color: 'darkorange',
-    yPosition: 3,
-  },
 ]
 
 export { kettleData }

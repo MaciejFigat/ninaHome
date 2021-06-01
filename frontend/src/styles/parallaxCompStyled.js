@@ -1,17 +1,6 @@
 import styled from 'styled-components'
 
 export const ParallaxWrapper = styled.div`
-  /* text-align: center; */
-  /* overflow-y: visible; */
-  /* min-height: 50vh; */
-  /* height: 50vh; */
-  /* width: 100vw; */
-  /* color: var(--text3-main); */
-  /* padding-bottom: 110px; */
-  /* overflow: hidden;
-  overflow-y: hidden; */
-  /* overflow-x: hidden; */
-  /* overflow-y: visible; */
   @media (max-width: 1190px) {
   }
   @media (max-width: 740px) {
@@ -21,25 +10,14 @@ export const ParallaxWrapper = styled.div`
 export const ParallaxContainer = styled.div`
   text-align: center;
 
-  /* width: 100vw; */
-  /* min-height: 140vh; */
-  /* min-height: fit-content; */
-  /* height: 100vh; */
-  /* background-color: var(--background4-main); */
-  /* background-image: url(${(props) =>
-    props.backgroundImage ? props.backgroundImage : 'none'}); */
-  /* background-size: cover; */
-  /* background-position: top; */
   color: var(--text3-main);
   padding-top: 110px;
-  /* padding-bottom: 110px; */
-  /* overflow: hidden;
-  overflow-y: hidden; */
+
   @media (max-width: 1190px) {
+    overflow: hidden;
     overflow-x: hidden;
     padding-top: 110px;
-    /* overflow: hidden; */
-    /* overflow-x: hidden; */
+
     padding-bottom: 110px;
     min-height: 50vh;
   }
@@ -55,6 +33,7 @@ export const ParallaxBox = styled.div`
   border-radius: 50%;
   background-color: ${(props) =>
     props.borderColor ? props.borderColor : 'cyan'};
+
   box-shadow: 3px 6px 5px 0px var(--background1-main);
   margin-left: auto;
   margin-right: auto;
@@ -73,26 +52,39 @@ export const ParallaxBox = styled.div`
   } */
 `
 export const ParallaxBoxTwo = styled.div`
-  /* position: absolute; */
   min-width: min-content;
   min-height: fit-content;
   padding: 20px;
   width: 150px;
   height: 150px;
   display: grid;
+
   place-items: center;
-  background-color: ${(props) =>
-    props.borderColor ? props.borderColor : 'cyan'};
+
+  background: #3b6fe0;
+  box-shadow: inset 5px 5px 10px #223f80, inset -5px -5px 10px #549fff;
+  /* background: #3b6fe0;
+  box-shadow: inset 7px 7px 14px #325ebe, inset -7px -7px 14px #4480ff; */
+
+  /* background: #e63946;
+  box-shadow: inset 5px 5px 10px #c4303c, inset -5px -5px 10px #ff4251; */
+  /* background: linear-gradient(145deg, #3564ca, #3f77f0);
+  box-shadow: 20px 20px 60px #325ebe, -20px -20px 60px #4480ff; */
+  /* background-color: ${(props) =>
+    props.borderColor ? props.borderColor : 'cyan'}; */
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1rem;
+  font-size: 0.75rem;
   /* margin-bottom: 120px; */
-  box-shadow: 3px 6px 5px 0px var(--background1-main);
+  /* box-shadow: 3px 6px 5px 0px var(--background1-main); */
+
   @media (max-width: 740px) {
-    font-size: 0.75rem;
+    width: 100px;
+    height: 100px;
+    font-size: 0.5rem;
     padding: 15px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
   }
 `
 export const ParallaxBoxTwoContent = styled.div`

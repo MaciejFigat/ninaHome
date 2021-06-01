@@ -6,15 +6,16 @@ import { kettleData } from '../data/bubbles'
 import { motivationData } from '../data/motivation'
 import { kettleData2, kettleData3 } from '../data/kettlebells'
 import { SectionDiv } from '../styles/sectionStyled'
-import parrots2 from '../assets/parrots2.svg'
+// import parrots2 from '../assets/parrots2.svg'
 import ParallaxTextBubble from '../components/animated/ParallaxTextBubble'
 import ContactIcons from '../components/ContactIcons'
 import { AnimateSharedLayout } from 'framer-motion'
 
+// <SectionDiv id='home' backgroundImage={parrots2}>
 const Home = () => {
   return (
     <AnimateSharedLayout>
-      <SectionDiv id='home' backgroundImage={parrots2}>
+      <SectionDiv id='home'>
         {' '}
         <ParallaxTextBubble
           title='Motywacja do treningu'
@@ -23,7 +24,7 @@ const Home = () => {
         ></ParallaxTextBubble>
       </SectionDiv>
 
-      <SectionDiv id='fitness' backgroundImage={parrots2}>
+      <SectionDiv id='fitness'>
         <ParallaxTextBubble
           title='Przykładowy trening'
           kettleData={kettleData}
@@ -31,7 +32,7 @@ const Home = () => {
         />{' '}
       </SectionDiv>
 
-      <SectionDiv id='plans' backgroundImage={parrots2}>
+      <SectionDiv id='plans'>
         {' '}
         <ParallaxTextBubble
           title={fitnessData[0].title}
@@ -40,7 +41,7 @@ const Home = () => {
         />{' '}
       </SectionDiv>
 
-      <SectionDiv id='training' backgroundImage={parrots2}>
+      <SectionDiv id='training'>
         {' '}
         <ParallaxTextBubble
           title='Trening medyczny'
@@ -49,7 +50,7 @@ const Home = () => {
         />
       </SectionDiv>
 
-      <SectionDiv id='ending' backgroundImage={parrots2}>
+      <SectionDiv id='ending'>
         {' '}
         <ParallaxTextBubble title={<ContactIcons />} kettleData={kettleData2} />
       </SectionDiv>
