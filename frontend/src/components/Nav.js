@@ -51,17 +51,7 @@ const Nav = () => {
             Blog
           </NavHashLink>
         </ListItem>
-        <ListItem>
-          {' '}
-          <NavHashLink
-            smooth
-            to='/home/#ending'
-            activeClassName='selected'
-            activeStyle={{ fontWeight: 'bold', color: 'lightcoral' }}
-          >
-            Kontakt
-          </NavHashLink>
-        </ListItem>
+        <ListItem> </ListItem>
         <ListItem>
           <ContactIcons />
         </ListItem>
@@ -71,3 +61,12 @@ const Nav = () => {
 }
 
 export default Nav
+
+// <NavHashLink
+//   smooth
+//   to='/home/#ending'
+//   activeClassName='selected'
+//   activeStyle={{ fontWeight: 'bold', color: 'lightcoral' }}
+// >
+//   Kontakt
+// </NavHashLink>

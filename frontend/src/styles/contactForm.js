@@ -24,6 +24,11 @@ export const ResponsiveDiv = styled.div`
 export const FormContainerDiv = styled.div`
   display: grid;
   place-items: center;
+  @media (min-width: 1191px) {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    /* margin-top: 4.25rem; */
+  }
 `
 export const ContactFormContainer = styled.div`
   display: grid;

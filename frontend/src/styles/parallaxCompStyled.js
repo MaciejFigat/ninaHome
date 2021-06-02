@@ -16,9 +16,9 @@ export const ParallaxContainer = styled.div`
   @media (max-width: 1190px) {
     overflow: hidden;
     overflow-x: hidden;
-    padding-top: 110px;
+    /* padding-top: 110px; */
 
-    padding-bottom: 110px;
+    /* padding-bottom: 110px; */
     min-height: 50vh;
   }
 `

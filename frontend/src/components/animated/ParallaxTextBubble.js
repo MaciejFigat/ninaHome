@@ -45,67 +45,70 @@ const ParalaxTextBubble = ({ title, kettleData, data }) => {
   return (
     <AnimateSharedLayout>
       <ParallaxContainer as={motion.div} ref={ref}>
-        <ParallaxBoxTwo
-          as={motion.div}
-          layout
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          style={{ y: y5, x: 0 }}
-          borderColor={kettleData[1].color}
-          onClick={() => {
-            setShowText(!showText)
-          }}
-        >
-          <h1>{title}</h1>
-        </ParallaxBoxTwo>
+        {title && (
+          <ParallaxBoxTwo
+            as={motion.div}
+            layout
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            style={{ y: y5, x: 0 }}
+            // borderColor={kettleData[1].color}
+            onClick={() => {
+              setShowText(!showText)
+            }}
+          >
+            <h1>{title}</h1>
+          </ParallaxBoxTwo>
+        )}
 
         {showText === true && data && <ParallaxComponentClick data={data} />}
-        {kettleData.map((example) => (
-          <div key={example.id}>
-            {example.title && (
-              <ParallaxBoxThree
-                as={motion.div}
-                layout
-                style={{ y: y3, x: example.xPosition }}
-                borderColor={example.color}
-              >
-                <h4>{example.title}</h4>
-              </ParallaxBoxThree>
-            )}
-            {!example.title && example.yPosition === 1 && (
-              <ParallaxBox
-                as={motion.div}
-                layout
-                style={{ y: y1, x: example.xPosition }}
-                borderColor={example.color}
-              />
-            )}
-            {!example.title && example.yPosition === 2 && (
-              <ParallaxBox
-                as={motion.div}
-                layout
-                style={{ y: y2, x: example.xPosition }}
-                borderColor={example.color}
-              />
-            )}
-            {!example.title && example.yPosition === 3 && (
-              <ParallaxBox
-                as={motion.div}
-                layout
-                style={{ y: y3, x: example.xPosition }}
-                borderColor={example.color}
-              />
-            )}
-            {!example.title && example.yPosition === 4 && (
-              <ParallaxBox
-                as={motion.div}
-                layout
-                style={{ y: y4, x: example.xPosition }}
-                borderColor={example.color}
-              />
-            )}
-          </div>
-        ))}
+        {kettleData &&
+          kettleData.map((example) => (
+            <div key={example.id}>
+              {example.title && (
+                <ParallaxBoxThree
+                  as={motion.div}
+                  layout
+                  style={{ y: y3, x: example.xPosition }}
+                  borderColor={example.color}
+                >
+                  <h4>{example.title}</h4>
+                </ParallaxBoxThree>
+              )}
+              {!example.title && example.yPosition === 1 && (
+                <ParallaxBox
+                  as={motion.div}
+                  layout
+                  style={{ y: y1, x: example.xPosition }}
+                  borderColor={example.color}
+                />
+              )}
+              {!example.title && example.yPosition === 2 && (
+                <ParallaxBox
+                  as={motion.div}
+                  layout
+                  style={{ y: y2, x: example.xPosition }}
+                  borderColor={example.color}
+                />
+              )}
+              {!example.title && example.yPosition === 3 && (
+                <ParallaxBox
+                  as={motion.div}
+                  layout
+                  style={{ y: y3, x: example.xPosition }}
+                  borderColor={example.color}
+                />
+              )}
+              {!example.title && example.yPosition === 4 && (
+                <ParallaxBox
+                  as={motion.div}
+                  layout
+                  style={{ y: y4, x: example.xPosition }}
+                  borderColor={example.color}
+                />
+              )}
+            </div>
+          ))}
       </ParallaxContainer>
     </AnimateSharedLayout>
   )

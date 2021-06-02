@@ -1,16 +1,25 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
+import { NavHashLink } from 'react-router-hash-link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { IconsItem, IconsWrapper } from '../styles/contactIcons'
 const ContactIcons = () => {
+  // <NavLink to='/contact' aria-label='contact'>
+  //   <FontAwesomeIcon icon={faEnvelopeSquare} />
+  // </NavLink>
   return (
     <IconsWrapper>
       <IconsItem>
-        <NavLink to='/contact' aria-label='contact'>
+        <NavHashLink
+          smooth
+          to='/home/#ending'
+          activeClassName='selected'
+          activeStyle={{ fontWeight: 'bold', color: 'lightcoral' }}
+        >
           <FontAwesomeIcon icon={faEnvelopeSquare} />
-        </NavLink>
+        </NavHashLink>
       </IconsItem>
       <IconsItem>
         <a
