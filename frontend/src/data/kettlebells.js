@@ -4,14 +4,14 @@ const kettleData2 = [
     title: 'Ćwicz',
     xPosition: -260,
     color: '#fec89a',
-    yPosition: 1,
+    yPosition: 2,
   },
   {
     id: 2,
     title: 'zdrowo',
     xPosition: -250,
     color: 'silver',
-    yPosition: 2,
+    yPosition: 1,
   },
   {
     id: 3,

@@ -34,10 +34,12 @@ export const ParallaxBox = styled.div`
   background-color: ${(props) =>
     props.borderColor ? props.borderColor : 'cyan'};
 
-  box-shadow: 3px 6px 5px 0px var(--background1-main);
+  box-shadow: 3px 2px 5px 0px var(--background1-main);
+  z-index: 3;
   margin-left: auto;
   margin-right: auto;
   &:after {
+    z-index: -1;
     content: '';
     height: 100px;
     width: 80px;
@@ -46,10 +48,21 @@ export const ParallaxBox = styled.div`
     position: relative;
     top: -50px;
     border-radius: 35%;
+    /* box-shadow: 0.5px -2px 0px 0px var(--background1-main); */
   }
-  /* @media (max-width: 1190px) {
-    display: none;
-  } */
+  @media (max-width: 1190px) {
+    /* display: none; */
+    width: 100px;
+    height: 100px;
+    &:after {
+      content: '';
+      height: 45px;
+      width: 40px;
+      border-width: 20px;
+      position: relative;
+      top: -40px;
+    }
+  }
 `
 export const ParallaxBoxTwo = styled.div`
   min-width: min-content;
@@ -64,7 +77,6 @@ export const ParallaxBoxTwo = styled.div`
   /* background: #3b6fe0; */
   background: var(--background4-main);
   box-shadow: inset 5px 5px 10px #223f80, inset -5px -5px 10px #549fff;
-
   /* background-color: ${(props) =>
     props.borderColor ? props.borderColor : 'cyan'}; */
   border-radius: 50%;
@@ -108,7 +120,8 @@ export const ParallaxBoxThree = styled.div`
   }
   &:after {
     /* content: ${(props) => (props.title ? props.title : '')}; */
-
+    /* box-shadow: 0.5px -2px 0px 0px var(--background1-main); */
+    z-index: -1;
     content: '';
     font-weight: 600;
     font-size: 3rem;
@@ -120,6 +133,25 @@ export const ParallaxBoxThree = styled.div`
     position: relative;
     top: -170px;
     border-radius: 35%;
+  }
+  @media (max-width: 1190px) {
+    h4 {
+      position: relative;
+      top: 20px;
+    }
+    /* display: none; */
+    width: 100px;
+    height: 100px;
+    font-size: 1rem;
+    &:after {
+      content: '';
+      height: 45px;
+      width: 40px;
+      border-width: 20px;
+      position: relative;
+      top: -92px;
+      border-radius: 35%;
+    }
   }
   /* @media (max-width: 1190px) {
     display: none;

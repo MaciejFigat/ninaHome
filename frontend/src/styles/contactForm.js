@@ -3,13 +3,15 @@ import styled from 'styled-components'
 export const ResponsiveDiv = styled.div`
   display: grid;
   place-items: left;
-  border: 1px solid var(--color3-main);
+  /* border: 1px solid var(--color3-main); */
   border-radius: 10px;
   width: 80%;
   padding: 40px 50px 20px;
   margin-top: 1.25rem;
   background: var(--background2-main);
-  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem var(--color1-shadow);
+  box-shadow: inset 8px 8px 16px #0b0b0d, inset -8px -8px 16px #25272b;
+
+  /* box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem var(--color1-shadow); */
 
   @media (max-width: 1024px) {
     padding: 20px 20px 20px;
@@ -28,7 +30,7 @@ export const ContactFormContainer = styled.div`
   place-items: center;
 `
 export const ContactFormStyled = styled.form`
-  width: 60%;
+  width: 80%;
   margin-top: 2rem;
   @media (min-width: 640px) and (max-width: 798px) {
     margin-top: 40px;
@@ -68,7 +70,7 @@ export const ContactField = styled.div`
         var(--color2-shadow)
       )
       1;
-    animation: 10s rotate linear infinite;
+    animation: 8s rotate linear infinite;
   }
 `
 
@@ -89,7 +91,7 @@ export const ContactFieldContent = styled.input`
   font-size: 15px;
   line-height: 1.2;
   padding: 0.8rem 1.2rem;
-  min-width: 60vw;
+  /* min-width: 60vw; */
   margin-bottom: 20px;
   transition: 1.9s;
   font-weight: 600;
@@ -127,14 +129,16 @@ export const SendButton = styled.button`
   font-size: 20px;
   font-weight: 700;
   color: var(--text-main);
+  background: var(--background1-main);
+  box-shadow: inset 6px 6px 9px #1c1e24, inset -6px -6px 9px #343a44;
+  /* box-shadow: inset 9px 9px 18px #22252c, inset -9px -9px 18px #2e333c; */
   text-align: center;
 
-  background: var(--background1-main);
-  border: 1px solid var(--color3-main);
+  /* border: 1px solid var(--color3-main); */
   transition: 0.5s;
   &:hover {
     transition: 0.5s;
-    border: 1px solid var(--text2-main);
+    /* border: 1px solid var(--text2-main); */
     box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem var(--color1-shadow);
   }
   &:active {

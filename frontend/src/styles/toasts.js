@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ToastDiv = styled.div`
-  position: absolute;
+  position: fixed;
   top: 100px;
   right: 30px;
   display: flex;

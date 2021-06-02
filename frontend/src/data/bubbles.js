@@ -10,14 +10,14 @@ const kettleData = [
     id: 2,
 
     xPosition: -350,
-    color: 'brown',
+    color: 'silver',
     yPosition: 2,
   },
   {
     id: 3,
 
     xPosition: 210,
-    color: 'darkgreen',
+    color: 'gold',
     yPosition: 2,
   },
 ]
