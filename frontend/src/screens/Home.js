@@ -6,17 +6,17 @@ import { kettleData } from '../data/bubbles'
 import { motivationData } from '../data/motivation'
 import { kettleData2, kettleData3 } from '../data/kettlebells'
 import { SectionDiv } from '../styles/sectionStyled'
-// import parrots2 from '../assets/parrots2.svg'
 import ParallaxTextBubble from '../components/animated/ParallaxTextBubble'
 import ContactIcons from '../components/ContactIcons'
 import { ParallaxBoxTwo } from '../styles/parallaxCompStyled'
 import ContactForm from '../components/ContactForm'
 import { AnimateSharedLayout } from 'framer-motion'
-
-// <SectionDiv id='home' backgroundImage={parrots2}>
+import SvgAnimated from '../components/animated/SvgAnimated'
 const Home = () => {
   return (
     <AnimateSharedLayout>
+      <SvgAnimated />
+
       <SectionDiv id='home'>
         {' '}
         <ParallaxTextBubble

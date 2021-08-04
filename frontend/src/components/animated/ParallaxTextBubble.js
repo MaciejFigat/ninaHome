@@ -49,7 +49,7 @@ const ParalaxTextBubble = ({ title, kettleData, data }) => {
           <ParallaxBoxTwo
             as={motion.div}
             layout
-            whileHover={{ scale: 1.1 }}
+            // whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             style={{ y: y5, x: 0 }}
             // borderColor={kettleData[1].color}
