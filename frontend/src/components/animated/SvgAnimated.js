@@ -4,7 +4,7 @@ import { SvgContainer, Container, SvgItem } from '../../styles/svgAnimated'
 const icon = {
   hidden: {
     pathLength: 0,
-    fill: '#FEBE10',
+    fill: 'red',
   },
   visible: {
     pathLength: 1,
@@ -18,7 +18,7 @@ const SvgAnimated = () => {
       <SvgContainer>
         <SvgItem
           xmlns='http://www.w3.org/2000/svg'
-          viewBox='0 0 100 130'
+          viewBox='0 0 130 130'
           as={motion.svg}
         >
           <motion.path
@@ -27,8 +27,8 @@ const SvgAnimated = () => {
             initial='hidden'
             animate='visible'
             transition={{
-              default: { duration: 2, ease: 'easeInOut' },
-              fill: { duration: 2, ease: [1, 0, 0.8, 1] },
+              default: { duration: 10, ease: 'easeInOut' },
+              fill: { duration: 2, ease: [1.5, 0, 0.8, 1] },
             }}
           />
         </SvgItem>

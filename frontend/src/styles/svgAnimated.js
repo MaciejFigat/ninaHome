@@ -9,14 +9,14 @@ export const SvgContainer = styled.div`
   display: flex;
   place-content: center;
   overflow: hidden;
-  /* background: rgba(255, 255, 255, 0.2); */
-  border-radius: 30px;
+  /* background: var(--background-tertiary5); */
+  /* background: var(--background3-main); */
 `
 export const SvgItem = styled.svg`
-  width: 56%;
+  width: 96%;
   overflow: visible;
-  stroke: #febe10;
-  stroke-width: 1;
+  stroke: var(--background-tertiary5);
+  stroke-width: 0.8;
   stroke-linejoin: round;
   stroke-linecap: round;
 `
@@ -25,5 +25,4 @@ export const Container = styled.div`
   display: grid;
   height: 100vh;
   place-items: center;
-  /* padding-top: 110px; */
 `
