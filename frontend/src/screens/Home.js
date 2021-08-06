@@ -12,10 +12,13 @@ import { ParallaxBoxTwo } from '../styles/parallaxCompStyled'
 import ContactForm from '../components/ContactForm'
 import { AnimateSharedLayout } from 'framer-motion'
 import SvgAnimated from '../components/animated/SvgAnimated'
+
 const Home = () => {
   return (
     <AnimateSharedLayout>
-      <SvgAnimated />
+      <SectionDiv id='beginning'>
+        <SvgAnimated />
+      </SectionDiv>
 
       <SectionDiv id='home'>
         {' '}

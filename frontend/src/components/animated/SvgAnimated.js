@@ -1,14 +1,24 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { SvgContainer, Container, SvgItem } from '../../styles/svgAnimated'
+import {
+  SvgContainer,
+  Container,
+  SvgItem,
+  TitleCard,
+  TitleContainer,
+  DescriptionContainer,
+} from '../../styles/svgAnimated'
+
 const icon = {
-  hidden: {
-    pathLength: 0,
-    fill: 'red',
-  },
   visible: {
+    pathLength: 0,
+    fill: '#fb1',
+    stroke: '#3b6fe0',
+  },
+  hidden: {
+    fill: '#3b6fe0',
+    stroke: 'green',
     pathLength: 1,
-    fill: '#FEBE10',
   },
 }
 
@@ -27,12 +37,18 @@ const SvgAnimated = () => {
             initial='hidden'
             animate='visible'
             transition={{
-              default: { duration: 10, ease: 'easeInOut' },
-              fill: { duration: 2, ease: [1.5, 0, 0.8, 1] },
+              default: { duration: 5, ease: 'easeInOut' },
+              fill: { duration: 4, ease: [1.5, 0, 0.8, 1.7] },
+              stroke: { duration: 4, ease: 'easeInOut' },
             }}
           />
         </SvgItem>
       </SvgContainer>
+      <TitleCard>
+        {' '}
+        <TitleContainer></TitleContainer>Nina Kiryłowicz
+        <DescriptionContainer>Trener Personalny</DescriptionContainer>
+      </TitleCard>
     </Container>
   )
 }
