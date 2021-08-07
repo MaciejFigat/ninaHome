@@ -28,9 +28,15 @@ export const TitleCard = styled.div`
 `
 export const TitleContainer = styled.div`
   font-size: 3rem;
+  @media (max-width: 880px) {
+    font-size: 2rem;
+  }
 `
 export const DescriptionContainer = styled.div`
   font-size: 5rem;
+  @media (max-width: 880px) {
+    font-size: 3rem;
+  }
 `
 export const Container = styled.div`
   /* display: grid; */
