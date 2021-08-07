@@ -7,7 +7,7 @@ export const SvgContainer = styled.div`
   display: flex;
   place-content: center;
   overflow: hidden;
-  /* background: var(--background-tertiary5); */
+  /* background: var(--background-tertiary3); */
   /* background: var(--background3-main); */
 `
 export const SvgItem = styled.svg`
@@ -39,11 +39,8 @@ export const DescriptionContainer = styled.div`
   }
 `
 export const Container = styled.div`
-  /* display: grid; */
   height: 100vh;
   display: flex;
-  /* min-width: 90vw; */
-  /* min-width: fit-content; */
   flex-direction: row;
   place-items: center;
   justify-content: center;
