@@ -5,7 +5,7 @@ export const ResponsiveDiv = styled.div`
   place-items: left;
   /* border: 1px solid var(--color3-main); */
   border-radius: 10px;
-  width: 80%;
+  width: 80vw;
   padding: 40px 50px 20px;
   margin-top: 1.25rem;
   background: var(--background2-main);
@@ -14,10 +14,11 @@ export const ResponsiveDiv = styled.div`
   /* box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem var(--color1-shadow); */
 
   @media (max-width: 1024px) {
+    width: 85vw;
     padding: 20px 20px 20px;
   }
   @media (max-width: 768px) {
-    width: 94%;
+    width: 90vw;
     padding: 10px 10px 10px;
   }
 `
@@ -35,7 +36,7 @@ export const ContactFormContainer = styled.div`
   place-items: center;
 `
 export const ContactFormStyled = styled.form`
-  width: 80%;
+  width: 85%;
   margin-top: 2rem;
   @media (min-width: 640px) and (max-width: 798px) {
     margin-top: 40px;
