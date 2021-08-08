@@ -17,7 +17,7 @@ export const ResponsiveDiv = styled.div`
     padding: 20px 20px 20px;
   }
   @media (max-width: 768px) {
-    width: 85%;
+    width: 94%;
     padding: 10px 10px 10px;
   }
 `
