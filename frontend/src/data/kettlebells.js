@@ -1,3 +1,4 @@
+const kettleData0 = [{}]
 const kettleData2 = [
   {
     id: 1,
@@ -62,4 +63,4 @@ const kettleData3 = [
   },
 ]
 
-export { kettleData2, kettleData3 }
+export { kettleData2, kettleData3, kettleData0 }

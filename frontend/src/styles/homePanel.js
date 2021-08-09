@@ -61,6 +61,7 @@ export const ListPicture = styled.img`
     width: 100%;
     max-height: 35vh;
     box-shadow: none;
+    border-radius: 0px;
   }
 `
 

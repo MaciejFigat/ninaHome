@@ -4,7 +4,7 @@ import { plansData } from '../data/plans'
 import { offerData } from '../data/offer'
 import { kettleData } from '../data/bubbles'
 import { motivationData } from '../data/motivation'
-import { kettleData2, kettleData3 } from '../data/kettlebells'
+import { kettleData2, kettleData3, kettleData0 } from '../data/kettlebells'
 import { SectionDiv } from '../styles/sectionStyled'
 import ParallaxTextBubble from '../components/animated/ParallaxTextBubble'
 import ContactIcons from '../components/ContactIcons'
@@ -27,7 +27,7 @@ const Home = () => {
         {' '}
         <ParallaxTextBubble
           title='Motywacja do treningu'
-          kettleData={kettleData3}
+          kettleData={kettleData0}
           data={motivationData}
         ></ParallaxTextBubble>
       </SectionDiv>

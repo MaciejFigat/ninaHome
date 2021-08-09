@@ -25,3 +25,9 @@ export const Card = styled.div`
     margin: 0.5rem;
   }
 `
+export const CardTitle = styled.h1`
+  font-size: 2rem;
+`
+export const CardContent = styled.p`
+  font-size: 1.25rem;
+`
