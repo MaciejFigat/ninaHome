@@ -5,33 +5,16 @@ import {
   CardTitle,
   CardContent,
 } from '../styles/sectionCards'
-const SectionCards = () => {
+const SectionCards = ({ cardData }) => {
   return (
     <CardContainer>
-      <Card>
-        <CardTitle>First Card</CardTitle>
-        <CardContent>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
-          velit veniam eum recusandae similique excepturi numquam adipisci nemo
-          quisquam eos.
-        </CardContent>
-      </Card>
-      <Card>
-        <CardTitle>First Card</CardTitle>
-        <CardContent>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
-          velit veniam eum recusandae similique excepturi numquam adipisci nemo
-          quisquam eos.
-        </CardContent>
-      </Card>
-      <Card>
-        <CardTitle>First Card</CardTitle>
-        <CardContent>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
-          velit veniam eum recusandae similique excepturi numquam adipisci nemo
-          quisquam eos.
-        </CardContent>
-      </Card>
+      {cardData &&
+        cardData.map((example) => (
+          <Card key={example.id}>
+            <CardTitle>{example.title}</CardTitle>
+            <CardContent>{example.description}</CardContent>
+          </Card>
+        ))}
     </CardContainer>
   )
 }

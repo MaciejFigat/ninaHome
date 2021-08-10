@@ -7,6 +7,7 @@ export const ResponsiveDiv = styled.div`
   width: 80vw;
   padding: 40px 50px 20px;
   margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   background: var(--background-tertiary1);
   box-shadow: inset 8px 8px 16px #0b0b0d, inset -8px -8px 16px #25272b;
 

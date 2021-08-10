@@ -28,7 +28,7 @@ const ParalaxTextBubble = ({ title, kettleData, data }) => {
   const y2 = useTransform(
     scrollY,
     [offsetTop - 100, offsetTop + 100],
-    [0, -200]
+    [100, -50]
   )
   const y3 = useTransform(
     scrollY,
@@ -36,11 +36,6 @@ const ParalaxTextBubble = ({ title, kettleData, data }) => {
     [-200, 100]
   )
   const y4 = useTransform(scrollY, [offsetTop + 50, offsetTop + 150], [0, 10])
-  const y5 = useTransform(
-    scrollY,
-    [offsetTop - 350, offsetTop + 50],
-    [-100, 100]
-  )
 
   return (
     <AnimateSharedLayout>

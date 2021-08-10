@@ -6,7 +6,7 @@ export const IconsWrapper = styled.ul`
 
   display: flex;
   flex-direction: row;
-
+  padding-right: 0.5rem;
   &:first-child {
     margin-left: 1.25rem;
   }

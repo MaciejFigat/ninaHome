@@ -11,7 +11,7 @@ const fitnessData = [
     description:
       'Moje podejście do klienta charakteryzuje indywidualizm i odpowiednie dostosowywanie bodźców treningowych.',
     description2:
-      '1Moje podejście do klienta charakteryzuje indywidualizm i odpowiednie dostosowywanie bodźców treningowych. Moje podejście do klienta charakteryzuje indywidualizm i odpowiednie dostosowywanie bodźców treningowych.',
+      'Moje podejście do klienta charakteryzuje indywidualizm i odpowiednie dostosowywanie bodźców treningowych. Moje podejście do klienta charakteryzuje indywidualizm i odpowiednie dostosowywanie bodźców treningowych.',
     color: '#a2d2ff',
   },
   {
