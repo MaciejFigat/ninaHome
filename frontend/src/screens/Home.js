@@ -19,7 +19,7 @@ const Home = () => {
       <SectionDiv id='beginning'>
         <SvgAnimated />
       </SectionDiv>
-      <SectionDiv id='beginning'>
+      <SectionDiv id='cardsOne'>
         <SectionCards />
       </SectionDiv>
 
@@ -32,28 +32,40 @@ const Home = () => {
         ></ParallaxTextBubble>
       </SectionDiv>
 
+      <SectionDiv id='cardsTwo'>
+        <SectionCards />
+      </SectionDiv>
+
       <SectionDiv id='fitness'>
         <ParallaxTextBubble
           title='Przykładowy trening'
-          kettleData={kettleData}
+          kettleData={kettleData0}
           data={plansData}
         />{' '}
+      </SectionDiv>
+
+      <SectionDiv id='cardsThree'>
+        <SectionCards />
       </SectionDiv>
 
       <SectionDiv id='plans'>
         {' '}
         <ParallaxTextBubble
           title={fitnessData[0].title}
-          kettleData={kettleData3}
+          kettleData={kettleData0}
           data={fitnessData}
         />{' '}
+      </SectionDiv>
+
+      <SectionDiv id='cardsFour'>
+        <SectionCards />
       </SectionDiv>
 
       <SectionDiv id='training'>
         {' '}
         <ParallaxTextBubble
           title='Trening medyczny'
-          kettleData={kettleData}
+          kettleData={kettleData0}
           data={offerData}
         />
       </SectionDiv>
@@ -66,7 +78,7 @@ const Home = () => {
           </h1>
         </ParallaxBoxTwo>
         <ContactForm />
-        <ParallaxTextBubble kettleData={kettleData2} />
+        <ParallaxTextBubble kettleData={kettleData0} />
       </SectionDiv>
     </AnimateSharedLayout>
   )

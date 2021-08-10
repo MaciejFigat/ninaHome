@@ -50,8 +50,7 @@ const ParalaxTextBubble = ({ title, kettleData, data }) => {
             as={motion.div}
             layout
             whileTap={{ scale: 0.9 }}
-            style={{ y: y5, x: 0 }}
-            // borderColor={kettleData[1].color}
+            style={{ y: y2, x: 0 }}
             onClick={() => {
               setShowText(!showText)
             }}

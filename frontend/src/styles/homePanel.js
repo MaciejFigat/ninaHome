@@ -1,16 +1,15 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-// ListWrapper, ListItem, ListMarker, ListRow
+
 export const PictureListWrapper = styled(motion.ul)`
   height: 100vh;
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  @media (max-width: 740px) {
+  @media (max-width: 1140px) {
     height: fit-content;
     align-items: center;
-    /* flex-direction: column-reverse; */
     flex-direction: column;
     padding: 0;
     margin-top: 0.5rem;
@@ -20,7 +19,6 @@ export const PictureListWrapper = styled(motion.ul)`
 export const ListWrapper = styled(motion.ul)`
   display: flex;
   flex-direction: column;
-  /* background: var(--background4-main); */
   background: linear-gradient(145deg, #3f77f0, #3564ca);
   box-shadow: 5px 5px 4px #1d366e, -5px -5px 4px #59a8ff;
   padding: 20px;
@@ -29,7 +27,7 @@ export const ListWrapper = styled(motion.ul)`
   max-width: 35vw;
   border-radius: 25px;
   height: fit-content;
-  @media (max-width: 740px) {
+  @media (max-width: 1140px) {
     padding: 10px;
     margin-top: 10px;
     max-width: 90vw;
@@ -41,12 +39,16 @@ export const PictureWrapper = styled(motion.div)`
   color: var(--text-main);
   width: 600px;
   margin-right: 20px;
-  @media (max-width: 740px) {
+  @media (max-width: 1140px) {
+    place-items: center;
     margin-top: 10px;
     margin-left: 0px;
     margin-right: 0px;
     padding: 0px;
-    width: 100%;
+    width: 80%;
+  }
+  @media (max-width: 600px) {
+    width: 90%;
   }
   border-radius: 25px;
 `
@@ -57,11 +59,14 @@ export const ListPicture = styled.img`
   object-fit: cover;
   box-shadow: 5px 5px 4px #1d366e, -5px -5px 4px #59a8ff;
   border-radius: 25px;
-  @media (max-width: 740px) {
-    width: 100%;
+  @media (max-width: 1040px) {
+    width: 80vw;
     max-height: 35vh;
-    box-shadow: none;
-    border-radius: 0px;
+    border-radius: 25px;
+  }
+  @media (max-width: 600px) {
+    width: 90vw;
+    max-height: 35vh;
   }
 `
 
@@ -79,7 +84,6 @@ export const ListItem = styled(motion.li)`
   border-radius: 10px;
   overflow: hidden;
   color: var(--text-main);
-  /* background: #1d3557; */
   background: var(--background-tertiary1);
   box-shadow: inset 5px 5px 10px #0c1523, inset -5px -5px 10px #2e558b;
   cursor: pointer;
