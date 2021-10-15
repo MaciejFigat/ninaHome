@@ -46,7 +46,7 @@ const SvgAnimated = () => {
       </SvgContainer>
       <TitleCard>
         {' '}
-        <TitleContainer></TitleContainer>Nina Kiryłowicz
+        <TitleContainer></TitleContainer>Nina K.
         <DescriptionContainer>Trener Personalny</DescriptionContainer>
       </TitleCard>
     </Container>
