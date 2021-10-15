@@ -61,12 +61,3 @@ const Nav = () => {
 }
 
 export default Nav
-
-// <NavHashLink
-//   smooth
-//   to='/home/#ending'
-//   activeClassName='selected'
-//   activeStyle={{ fontWeight: 'bold', color: 'lightcoral' }}
-// >
-//   Kontakt
-// </NavHashLink>
