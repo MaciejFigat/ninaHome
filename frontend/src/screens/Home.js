@@ -2,12 +2,9 @@ import React from 'react'
 import { fitnessData } from '../data/fitness'
 import { plansData } from '../data/plans'
 import { offerData } from '../data/offer'
-// import { kettleData } from '../data/bubbles'
 import { motivationData } from '../data/motivation'
-// import { kettleData2, kettleData3, kettleData0 } from '../data/kettlebells'
 import { SectionDiv } from '../styles/sectionStyled'
 import ParallaxTextBubble from '../components/animated/ParallaxTextBubble'
-
 import ContactForm from '../components/ContactForm'
 import { AnimateSharedLayout } from 'framer-motion'
 import SvgAnimated from '../components/animated/SvgAnimated'
@@ -26,7 +23,6 @@ const Home = () => {
         {' '}
         <ParallaxTextBubble
           title='Motywacja do treningu'
-          // kettleData={kettleData0}
           data={motivationData}
         ></ParallaxTextBubble>
       </SectionDiv>
@@ -36,11 +32,7 @@ const Home = () => {
       </SectionDiv>
 
       <SectionDiv id='fitness'>
-        <ParallaxTextBubble
-          title='Przykładowy trening'
-          // kettleData={kettleData0}
-          data={offerData}
-        />{' '}
+        <ParallaxTextBubble title='Przykładowy trening' data={offerData} />{' '}
       </SectionDiv>
 
       <SectionDiv id='cardsThree'>
@@ -51,7 +43,6 @@ const Home = () => {
         {' '}
         <ParallaxTextBubble
           title={fitnessData[0].title}
-          // kettleData={kettleData0}
           data={fitnessData}
         />{' '}
       </SectionDiv>
